@@ -24,21 +24,25 @@ export default function Hero() {
     <section className="hero">
       <div className="hero-inner">
         <div className="hero-text">
-          <div className="hero-badge">✨ Empowering every child to communicate</div>
+          <div className="hero-badge">✨ Communication. Analytics. Insight.</div>
           <h1>
-            Every child deserves a{' '}
-            <span className="hero-accent--blue">voice</span>
-            {' '}— and someone to{' '}
-            <span className="hero-accent--green">truly listen</span>
+            Every child deserves to be{' '}
+            <span className="hero-accent--blue">heard</span>
+            {' '}— and{' '}
+            <span className="hero-accent--green">understood</span>.
           </h1>
           <p>
-            SENSay is a configurable communication app for non-verbal and
-            speech-impaired children — with AI analytics that reveal the
-            patterns, triggers and trends hidden in every interaction.
+            SENSay is a two-way communication platform for non-verbal and pre-verbal children.
+            Your own photos and videos become communication tiles. Adults get suggested responses
+            and a full analytics dashboard that shows the patterns behind every interaction —
+            across home, school, and clinical settings.
           </p>
           <div className="hero-btns">
-            <a href="https://app.sensay.uk" className="btn btn--primary">
-              Start free trial
+            <a
+              href="mailto:hello@sensay.uk?subject=Pilot%20interest"
+              className="btn btn--primary"
+            >
+              Book a pilot conversation →
             </a>
             <a href="#how-it-works" className="btn btn--outline">
               See how it works
@@ -76,6 +80,9 @@ export default function Hero() {
                 <span style={{color:'var(--blue)', fontWeight:700}}>View full report ›</span>
               </span>
             </div>
+          </div>
+          <div className="demo-caption">
+            Adults add their own photos and videos as tiles — this is an example.
           </div>
         </div>
       </div>

@@ -42,7 +42,7 @@ export default function Nav() {
           ) : (
             <Link to="/#pricing">Pricing</Link>
           )}
-          <a href="https://app.sensay.uk" className="nav-cta">Get started free</a>
+          <a href="mailto:hello@sensay.uk?subject=Pilot%20interest" className="nav-cta">Book pilot</a>
         </nav>
 
         <button

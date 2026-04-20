@@ -84,7 +84,23 @@
   line-height: 1.6;
 }
 
+.testimonials-cta__btns {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.testimonials-cta__btns .btn--outline {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+.testimonials-cta__btns .btn--outline:hover {
+  border-color: var(--yellow);
+  color: var(--yellow);
+}
+
 @media (max-width: 860px) {
   .testimonials-grid { grid-template-columns: 1fr; }
   .testimonials-cta { flex-direction: column; text-align: center; padding: 2rem; }
+  .testimonials-cta__btns { justify-content: center; }
 }

@@ -4,8 +4,8 @@ import './Stats.css'
 const STATS = [
   { num: '1.4M', label: 'Children with SLCN in the UK alone' },
   { num: '10%',  label: 'Of all children — 2–3 per classroom' },
-  { num: '3',    label: 'User groups: parents, schools, health' },
-  { num: '∞',    label: 'Possible configurations per child' },
+  { num: '3',    label: 'Integrated views: home, school, healthcare' },
+  { num: '∞',    label: 'Tiles you can personalise per child' },
 ]
 
 export default function Stats() {

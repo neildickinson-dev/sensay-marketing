@@ -175,6 +175,15 @@
   50% { opacity: 0.3; }
 }
 
+.demo-caption {
+  margin-top: 0.75rem;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--muted);
+  line-height: 1.5;
+  text-align: center;
+}
+
 @media (max-width: 760px) {
   .hero-inner {
     grid-template-columns: 1fr;

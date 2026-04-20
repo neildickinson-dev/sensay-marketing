@@ -1,0 +1,76 @@
+/* Styles for the shared DraftSample component.
+   Duplicated/moved from src/pages/senco.css so Home can reuse. */
+
+.draft-block {
+  max-width: 760px;
+  margin: 0 auto;
+  background: #fffdf5;
+  border: 1px solid #f2e5b5;
+  border-left: 5px solid var(--yellow);
+  border-radius: 12px;
+  padding: 1.75rem 1.75rem 1.5rem;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+}
+.draft-block__banner {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  color: #9a6b00;
+  background: rgba(253, 185, 19, 0.18);
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-bottom: 0.9rem;
+}
+.draft-block__meta {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+  word-break: break-word;
+}
+.draft-block__heading {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: var(--dark);
+  margin: 1.5rem 0 0.6rem;
+}
+.draft-block__heading:first-of-type { margin-top: 0; }
+.draft-block__items {
+  color: var(--blue);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.draft-block__p {
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  color: var(--mid);
+  line-height: 1.8;
+  margin: 0 0 0.6rem;
+}
+.draft-block__pattern {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--mid);
+  line-height: 1.7;
+  padding-left: 0.9rem;
+  border-left: 3px solid var(--blue);
+  margin: 0.75rem 0 0.25rem;
+}
+.draft-block__nev {
+  background: #f1f5f9;
+  border: 1px dashed #cbd5e1;
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+@media (max-width: 640px) {
+  .draft-block { padding: 1.25rem; }
+}

@@ -1,58 +1,42 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './HowItWorks.css'
 
+/* Brief drops the feature bullet lists in each tab — kept as empty arrays so the existing
+   .hiw-features rendering simply produces nothing. If Neil wants bullets back, repopulate. */
 const TABS = [
   {
     id: 'child',
     label: '🌟 The child',
     color: 'blue',
-    heading: 'Simple, joyful and empowering',
-    body: 'The child sees large, colourful picture symbols on a clear board. One tap communicates a feeling, need or request — instantly. The board grows as the child grows.',
-    features: [
-      'Big, clear pictorial symbols — Mulberry library + custom photos',
-      'Configurable number of choices — simple or detailed boards',
-      'Sound and visual feedback on every tap',
-      'Works offline, syncs automatically in the background',
-    ],
+    heading: 'Their voice, their way',
+    body: 'The child taps tiles to communicate feelings, needs, and requests. Tiles use photos, videos, or voice recordings personal to them — not generic symbols. The tree grows as the child develops, from 4 tiles at starting, to 40+ as communication expands.',
+    features: [],
   },
   {
     id: 'parent',
     label: '❤️ Parents',
     color: 'green',
-    heading: 'Insight you\'ve never had before',
-    body: 'Parents see a daily and weekly timeline of what their child communicated, when, and in what context — at home, at school, with healthcare. Trends surface automatically.',
-    features: [
-      'Real-time notification when your child communicates',
-      'Daily activity timeline across all environments',
-      'AI-generated weekly insight reports in plain English',
-      'Share reports directly with school or health teams',
-    ],
+    heading: 'Understand what your child is telling you',
+    body: "See patterns you'd never catch in the moment. When does your child seek \"quiet time\"? What triggers distress? Which communications appear only at school and not at home? SENSay surfaces the signal in the data — with clear summary documents you can share with your child's school or therapist.",
+    features: [],
   },
   {
     id: 'school',
     label: '🏫 Schools',
     color: 'red',
-    heading: 'A richer picture for every child',
-    body: 'Teachers and SENCOs access a classroom dashboard showing communication activity, flagged patterns, and AI-generated context — GDPR-compliant and secure.',
-    features: [
-      'Classroom licence covers all children in your care',
-      'AI identifies triggers and environmental factors automatically',
-      'Connects school data with home data securely',
-      'Structured evidence export for EHCPs and review meetings',
-    ],
+    heading: 'From observation to EHCP draft',
+    body: 'Teachers log simple classroom observations during normal AAC activities. At EHCP review time, SENSay drafts Section B text grouped by area of need, with every claim cited to the source observation. SENCOs audit before signing. The tool hedges its language when evidence is thin and speaks confidently when evidence is consistent — it never overclaims what was seen.',
+    features: [],
+    link: { to: '/senco', label: 'See the SENCO feature →' },
   },
   {
     id: 'health',
     label: '⚕️ Healthcare',
     color: 'yellow',
-    heading: 'Clinical-grade longitudinal data',
-    body: 'Speech therapists, paediatricians and psychologists access a specialist view — months of timestamped communication data, development trajectories, and AI-powered insights.',
-    features: [
-      'Months of timestamped communication history',
-      'Development trajectory tracking over time',
-      'Export reports for clinical documentation',
-      'False-positive flagging (play-seeking vs genuine need)',
-    ],
+    heading: 'Longitudinal evidence, not session snapshots',
+    body: "Speech therapists, paediatricians, and specialist nurses see a child's communication trajectory across months, not minutes. Cross-context analytics reveal how communication shifts between 1:1 and group, morning and afternoon, familiar and unfamiliar adults. Auto-generated quarterly summaries align to clinical reporting frameworks.",
+    features: [],
   },
 ]
 
@@ -69,12 +53,12 @@ export default function HowItWorks() {
   const c = COLOR_MAP[tab.color]
 
   return (
-    <section className="section section--white" id="how-it-works">
+    <section className="section section--white" id="user-groups">
       <div className="section-inner">
         <div className="section-header">
           <div className="section-tag">Who is SENSay for?</div>
-          <h2>Built for every perspective</h2>
-          <p>SENSay serves the whole ecosystem around a child — from the child's direct experience to the professionals who support their development.</p>
+          <h2>One child. Three views. Shared insight.</h2>
+          <p>SENSay is designed for the ecosystem around the child — parent, school, and healthcare professional — each seeing the insight relevant to their role, with consent managed by the family.</p>
         </div>
 
         <div className="hiw-tabs">
@@ -101,15 +85,27 @@ export default function HowItWorks() {
           </div>
           <div className="hiw-text">
             <h3>{tab.heading}</h3>
-            <p>{tab.body}</p>
-            <ul className="hiw-features">
-              {tab.features.map(f => (
-                <li key={f}>
-                  <span className="hiw-check" style={{background: c.dot}}>✓</span>
-                  {f}
-                </li>
-              ))}
-            </ul>
+            <p>
+              {tab.body}
+              {tab.link && (
+                <>
+                  {' '}
+                  <Link to={tab.link.to} className="hiw-inline-link" style={{ color: c.dot }}>
+                    {tab.link.label}
+                  </Link>
+                </>
+              )}
+            </p>
+            {tab.features.length > 0 && (
+              <ul className="hiw-features">
+                {tab.features.map(f => (
+                  <li key={f}>
+                    <span className="hiw-check" style={{background: c.dot}}>✓</span>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         </div>
       </div>

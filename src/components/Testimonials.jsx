@@ -54,12 +54,23 @@ export default function Testimonials() {
 
         <div className="testimonials-cta">
           <div className="testimonials-cta__text">
-            <h3>Ready to give every child a voice?</h3>
-            <p>Join our Q3 2026 pilot programme — free for the first 50 families and schools.</p>
+            <h3>Ready to give your child a voice that's truly heard?</h3>
+            {/* Brief didn't specify a sub-line — left blank. Re-add if needed. */}
           </div>
-          <a href="mailto:hello@sensay.uk" className="btn btn--primary">
-            Register for pilot →
-          </a>
+          <div className="testimonials-cta__btns">
+            <a
+              href="mailto:hello@sensay.uk?subject=Pilot%20interest"
+              className="btn btn--primary"
+            >
+              Book a pilot conversation →
+            </a>
+            <a
+              href="mailto:parents@sensay.uk?subject=Waiting%20list"
+              className="btn btn--outline"
+            >
+              Join the parent waiting list
+            </a>
+          </div>
         </div>
       </div>
     </section>
