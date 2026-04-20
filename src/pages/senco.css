@@ -1,0 +1,304 @@
+/* Styles specific to the /senco page. Built on top of pages.css + App.css tokens. */
+
+/* Hero CTAs */
+.senco-hero-cta {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.75rem;
+}
+.senco-hero-cta .btn--outline {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+.senco-hero-cta .btn--outline:hover {
+  border-color: var(--yellow);
+  color: var(--yellow);
+}
+
+/* Three-column feature grid */
+.senco-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.senco-feature {
+  background: var(--light);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 1.75rem 1.5rem;
+}
+.senco-feature__icon {
+  font-size: 28px;
+  margin-bottom: 0.75rem;
+}
+.senco-feature__title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: var(--dark);
+  margin-bottom: 0.6rem;
+  letter-spacing: -0.2px;
+}
+.senco-feature__body {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* See-it-working draft block */
+.senco-seeit .section-header p {
+  font-style: italic;
+}
+.draft-block {
+  max-width: 760px;
+  margin: 0 auto;
+  background: #fffdf5; /* subtle off-white with a warm tint */
+  border: 1px solid #f2e5b5;
+  border-left: 5px solid var(--yellow);
+  border-radius: 12px;
+  padding: 1.75rem 1.75rem 1.5rem;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+}
+.draft-block__banner {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  color: #9a6b00;
+  background: rgba(253, 185, 19, 0.18);
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-bottom: 0.9rem;
+}
+.draft-block__meta {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+  word-break: break-word;
+}
+.draft-block__heading {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: var(--dark);
+  margin: 1.5rem 0 0.6rem;
+}
+.draft-block__heading:first-of-type { margin-top: 0; }
+.draft-block__items {
+  color: var(--blue);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.draft-block__p {
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  color: var(--mid);
+  line-height: 1.8;
+  margin: 0 0 0.6rem;
+}
+.draft-block__pattern {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--mid);
+  line-height: 1.7;
+  padding-left: 0.9rem;
+  border-left: 3px solid var(--blue);
+  margin: 0.75rem 0 0.25rem;
+}
+.draft-block__nev {
+  background: #f1f5f9;
+  border: 1px dashed #cbd5e1;
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+.senco-seeit__note {
+  max-width: 760px;
+  margin: 1.25rem auto 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.7;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Pilot pitch two-column */
+.pilot-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.pilot-col {
+  background: var(--light);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 1.75rem;
+}
+.pilot-col--accent {
+  background: #eaf7ff;
+  border-color: #c8e8f7;
+}
+.pilot-col__title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: var(--dark);
+  margin-bottom: 1rem;
+  letter-spacing: -0.2px;
+}
+.pilot-col__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.pilot-col__list li {
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 0.95rem;
+  color: var(--mid);
+  line-height: 1.65;
+}
+.pilot-col__list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--green);
+  font-weight: 900;
+}
+.pilot-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* FAQ accordion */
+.senco-faq-wrap { max-width: 780px; }
+.senco-faq {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.faq-item {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.faq-item--open { box-shadow: 0 6px 22px rgba(0, 0, 0, 0.05); }
+.faq-item__q {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 1rem 1.25rem;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.faq-item__chev {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.25rem;
+  color: var(--blue);
+  flex-shrink: 0;
+}
+.faq-item__a {
+  padding: 0 1.25rem 1.25rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+/* Founder note */
+.founder-note {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 2rem;
+  align-items: flex-start;
+  background: var(--light);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 2rem;
+}
+.founder-note__photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--blue), var(--dark));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 2.25rem;
+  letter-spacing: -1px;
+}
+.founder-note__quote {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--dark);
+  line-height: 1.75;
+  font-style: italic;
+  font-weight: 600;
+  margin: 0 0 1.25rem;
+  border: 0;
+}
+.founder-note__sig { font-size: 0.9rem; line-height: 1.6; }
+.founder-note__name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: 0.4rem;
+}
+.founder-note__contact { color: var(--muted); }
+.founder-note__contact a {
+  color: var(--blue);
+  font-weight: 700;
+}
+.senco-bottom-cta {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+/* Responsive — least-invasive breakpoint choice: match existing 640px pattern
+   used in pages.css for contact-grid. Flag: not tested below 360px. */
+@media (max-width: 840px) {
+  .senco-features { grid-template-columns: 1fr; }
+  .pilot-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .founder-note {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.5rem;
+  }
+  .founder-note__photo {
+    width: 96px;
+    height: 96px;
+    font-size: 1.75rem;
+  }
+  .draft-block { padding: 1.25rem; }
+}

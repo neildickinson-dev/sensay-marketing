@@ -1,0 +1,27 @@
+.stats {
+  background: var(--dark);
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+.stats-item { text-align: center; }
+.stats-num {
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: var(--yellow);
+  line-height: 1;
+}
+.stats-label {
+  font-size: 13px;
+  color: rgba(255,255,255,0.45);
+  margin-top: 5px;
+  font-weight: 600;
+  max-width: 160px;
+}
+@media (max-width: 600px) {
+  .stats { gap: 2rem; }
+  .stats-num { font-size: 2rem; }
+}

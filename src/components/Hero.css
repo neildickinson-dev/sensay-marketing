@@ -1,0 +1,188 @@
+.hero {
+  background: linear-gradient(135deg, #eaf7ff 0%, #fff9e8 50%, #eaffee 100%);
+  padding: 5rem 1.5rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -100px; left: -100px;
+  width: 350px; height: 350px;
+  border-radius: 50%;
+  background: rgba(0,174,239,0.06);
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -80px; right: -80px;
+  width: 280px; height: 280px;
+  border-radius: 50%;
+  background: rgba(0,166,81,0.06);
+  pointer-events: none;
+}
+
+.hero-inner {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Text */
+.hero-badge {
+  display: inline-block;
+  background: rgba(0,174,239,0.1);
+  color: var(--blue);
+  border: 1.5px solid rgba(0,174,239,0.25);
+  padding: 6px 18px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.hero-text h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  line-height: 1.15;
+  color: var(--dark);
+  letter-spacing: -1px;
+  margin-bottom: 1.25rem;
+}
+
+.hero-accent--blue  { color: var(--blue); }
+.hero-accent--green { color: var(--green); }
+
+.hero-text p {
+  font-size: 1.05rem;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Demo window */
+.hero-demo {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.12);
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.demo-bar {
+  background: var(--dark);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.demo-dot {
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.demo-label {
+  font-size: 12px;
+  color: rgba(255,255,255,0.35);
+  margin-left: 8px;
+  font-family: var(--font-body);
+}
+
+.demo-body { padding: 20px; }
+
+.demo-prompt {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.symbol-card {
+  border-radius: 12px;
+  padding: 14px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  border: 2px solid transparent;
+  transition: transform 0.15s, box-shadow 0.15s;
+  background: none;
+}
+.symbol-card:hover { transform: scale(1.05); }
+.symbol-card--tapped { transform: scale(0.95); box-shadow: 0 0 0 3px rgba(0,174,239,0.4); }
+
+.symbol-card--blue   { background: #eaf7ff; border-color: #b3e5fc; }
+.symbol-card--red    { background: #fff3f3; border-color: #ffcdd2; }
+.symbol-card--green  { background: #edfff4; border-color: #b2dfdb; }
+.symbol-card--yellow { background: #fffbee; border-color: #ffe082; }
+
+.symbol-emoji { font-size: 32px; line-height: 1; }
+.symbol-label {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 11px;
+  color: var(--dark);
+}
+
+.demo-insight {
+  background: linear-gradient(90deg, #eaf7ff, #edfff4);
+  border-radius: 10px;
+  padding: 11px 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 12.5px;
+  color: #374151;
+  border: 1px solid #d1fae5;
+  min-height: 44px;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.demo-insight--visible { opacity: 1; }
+
+.demo-insight__dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--green);
+  flex-shrink: 0;
+  margin-top: 3px;
+  animation: pulse 1.8s infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+@media (max-width: 760px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .demo-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .demo-grid { grid-template-columns: repeat(2, 1fr); }
+}
