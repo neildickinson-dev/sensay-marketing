@@ -5,8 +5,8 @@ import './Footer.css'
 const LINKS = {
   Product: [
     { label: 'How it works',   href: '/#how-it-works', internal: false },
-    { label: 'For schools',    href: '/#for-schools',  internal: false },
-    { label: 'AI analytics',   href: '/#ai',           internal: false },
+    { label: 'For schools',    href: '/senco',         internal: true  },
+    { label: 'AI analytics',   href: '/#proof',        internal: false },
     { label: 'Pricing',        href: '/#pricing',      internal: false },
   ],
   Company: [

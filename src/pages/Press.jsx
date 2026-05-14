@@ -5,7 +5,7 @@ const ASSETS = [
   { icon: '🖼️', label: 'Logo pack', desc: 'PNG and SVG in all variants — light, dark, blue background, four-colour stripe.' },
   { icon: '🎨', label: 'Brand guidelines', desc: 'Colour palette, typography system, logo usage rules and spacing.' },
   { icon: '📸', label: 'Product screenshots', desc: 'High-resolution screenshots of the communication board and analytics dashboard.' },
-  { icon: '👤', label: 'Founder headshot', desc: 'High-resolution photo of Neil Dickinson, founder & CEO.' },
+  { icon: '👤', label: 'Founder headshots', desc: 'High-resolution photos of Kirsty Dickinson (CEO) and Neil Dickinson (CTO).' },
 ]
 
 export default function Press() {
@@ -39,7 +39,7 @@ export default function Press() {
 
         <h2>Key facts</h2>
         <ul>
-          <li>Founded: 2025 by Neil Dickinson, parent of a non-verbal child with SEN</li>
+          <li>Founded: 2025 by Kirsty and Neil Dickinson, parents of a non-verbal child with SEN</li>
           <li>Headquarters: United Kingdom</li>
           <li>Target market: 1.4 million children in the UK with long-term SLCN</li>
           <li>Global AAC market: $2.09B (2024), growing at 11.3% CAGR to $3.56B by 2029</li>

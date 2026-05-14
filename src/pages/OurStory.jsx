@@ -30,7 +30,7 @@ export default function OurStory() {
             "We have been learning to listen using our eyes rather than our ears."
           </p>
           <p style={{fontSize:13, color:'var(--muted)', marginTop:8, marginBottom:0, fontWeight:600}}>
-            — Neil Dickinson, Founder & CEO
+            — Neil Dickinson, Co-founder & CTO
           </p>
         </div>
 
@@ -171,7 +171,34 @@ export default function OurStory() {
 
         <hr />
 
-        {/* Founder card */}
+        {/* Founder cards — Kirsty (CEO) first, Neil (CTO) second */}
+        <div style={{
+          background:'var(--light)', borderRadius:16, padding:'2rem',
+          border:'1px solid #e2e8f0', display:'flex', gap:'1.5rem',
+          alignItems:'flex-start', flexWrap:'wrap', marginBottom:'1.5rem'
+        }}>
+          <div style={{
+            width:72, height:72, borderRadius:'50%',
+            background:'var(--red)', display:'flex', alignItems:'center',
+            justifyContent:'center', fontFamily:'var(--font-display)',
+            fontWeight:900, fontSize:24, color:'#fff', flexShrink:0
+          }}>
+            KD
+          </div>
+          <div style={{flex:1}}>
+            <div style={{fontFamily:'var(--font-display)', fontWeight:900, fontSize:'1.1rem', color:'var(--dark)', marginBottom:4}}>
+              Kirsty Dickinson
+            </div>
+            <div style={{fontSize:13, color:'var(--muted)', marginBottom:12, fontWeight:600}}>
+              Co-founder & CEO · Parent of William
+            </div>
+            <div className="placeholder-block" style={{margin:0, textAlign:'left'}}>
+              <div className="placeholder-block__label">Kirsty bio — to be filled in</div>
+              <p>2–3 sentences establishing Kirsty's background, why she leads SENSay, and how it connects to her role as William's mother. Same length and tone as Neil's bio below.</p>
+            </div>
+          </div>
+        </div>
+
         <div style={{
           background:'var(--light)', borderRadius:16, padding:'2rem',
           border:'1px solid #e2e8f0', display:'flex', gap:'1.5rem',
@@ -190,18 +217,14 @@ export default function OurStory() {
               Neil Dickinson
             </div>
             <div style={{fontSize:13, color:'var(--muted)', marginBottom:12, fontWeight:600}}>
-              Founder & CEO · Parent of William · Commercial & technical engineer
+              Co-founder & CTO · Parent of William · Commercial & technical engineer
             </div>
             <p style={{fontSize:14, color:'var(--mid)', lineHeight:1.75, margin:0}}>
               Neil is the father of William, a 10-year-old non-verbal child with autism and compound
-              learning difficulties, and the driving force behind SENSay. With a background in
-              commercial engineering and project delivery, Neil brings both the personal motivation
-              and the technical grounding to build a platform that genuinely serves the SEN community.
+              learning difficulties. He co-founded SENSay with Kirsty and leads engineering. With a
+              background in commercial engineering and project delivery, Neil brings the technical
+              grounding to build a tool that genuinely serves the SEN community.
             </p>
-            <div className="placeholder-block" style={{marginTop:'1rem', textAlign:'left'}}>
-              <div className="placeholder-block__label">Add your co-founder here when ready</div>
-              <p>If there's a second founder or key team member to introduce, this is the right place.</p>
-            </div>
           </div>
         </div>
 

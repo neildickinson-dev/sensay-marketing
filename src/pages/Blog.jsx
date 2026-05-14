@@ -40,8 +40,8 @@ const POSTS = [
   {
     emoji: '🌱', bg: '#edfff4',
     tag: 'Our story',
-    title: 'From parent to founder: why I built SENSay',
-    desc: 'Neil Dickinson on the moment he decided to stop looking for the right tool and start building it.',
+    title: 'From parents to founders: why we built SENSay',
+    desc: 'Kirsty and Neil Dickinson on the moment they decided to stop looking for the right tool and start building it.',
     date: 'Coming soon',
   },
 ]
