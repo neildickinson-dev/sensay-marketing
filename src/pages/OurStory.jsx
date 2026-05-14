@@ -55,9 +55,27 @@ export default function OurStory() {
           They are just speaking in ways the world hasn't learned to hear yet.</strong>
         </p>
 
-        <div className="placeholder-block">
-          <div className="placeholder-block__label">Add more about William here — optional</div>
-          <p>A moment, a memory, something that captures who he is. This doesn't need to be long — even one specific detail makes him real to the reader.</p>
+        <div style={{
+          borderLeft: '4px solid var(--blue)',
+          paddingLeft: '1.5rem',
+          margin: '2rem 0 2.5rem',
+        }}>
+          <p style={{
+            fontFamily: 'var(--font-display)', fontWeight: 700,
+            fontSize: '1.2rem', color: 'var(--dark)', lineHeight: 1.6,
+            fontStyle: 'italic', margin: 0
+          }}>
+            "William is non-verbal, autistic, and has compound learning difficulties.
+            He's also funny, affectionate, stubborn, and one of the most expressive
+            children I know — if you're paying attention. He's taught his dad, his
+            brother, his teachers and his therapists more about patience and listening
+            than anyone else in our lives. He's taught all of us how to listen with
+            our eyes. SENSay is the tool I wish we'd had years ago — the one that
+            helps the adults around him keep up."
+          </p>
+          <p style={{fontSize:13, color:'var(--muted)', marginTop:12, marginBottom:0, fontWeight:600}}>
+            — Kirsty Dickinson, co-founder
+          </p>
         </div>
 
         <h2>The battles</h2>
@@ -192,10 +210,28 @@ export default function OurStory() {
             <div style={{fontSize:13, color:'var(--muted)', marginBottom:12, fontWeight:600}}>
               Co-founder & CEO · Parent of William
             </div>
-            <div className="placeholder-block" style={{margin:0, textAlign:'left'}}>
-              <div className="placeholder-block__label">Kirsty bio — to be filled in</div>
-              <p>2–3 sentences establishing Kirsty's background, why she leads SENSay, and how it connects to her role as William's mother. Same length and tone as Neil's bio below.</p>
-            </div>
+            <p style={{fontSize:14, color:'var(--mid)', lineHeight:1.75, margin:'0 0 0.9rem'}}>
+              Kirsty Dickinson is co-founder and CEO of SENSay. She holds a degree in
+              Educational Studies and has spent over twenty years working with local
+              community groups across West Yorkshire. She currently supports SEND
+              families through roles at two local charities — PCAN (the parent carer
+              forum for Kirklees) and Barnardo's — and is a governor at a specialist
+              school.
+            </p>
+            <p style={{fontSize:14, color:'var(--mid)', lineHeight:1.75, margin:'0 0 0.9rem'}}>
+              Her professional background spans project management in the glass
+              industry and outreach work and senior management at Citizens Advice,
+              but the thread through all of it is the same: building strong
+              relationships, advocating for and supporting people who are often
+              unheard, and a drive to improve the systems families have to navigate.
+            </p>
+            <p style={{fontSize:14, color:'var(--mid)', lineHeight:1.75, margin:0}}>
+              The work is personal. Kirsty's son William is non-verbal, autistic,
+              and has a severe learning disability. SENSay exists because she brings
+              that lived experience to every part of how it's built — and because
+              she believes the families and professionals around children like
+              William deserve tools that actually work for them.
+            </p>
           </div>
         </div>
 
