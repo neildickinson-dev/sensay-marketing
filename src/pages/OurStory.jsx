@@ -123,32 +123,6 @@ export default function OurStory() {
         <h2>Why we built SENSay</h2>
 
         <p>
-          We are not academics or healthcare professionals. We are parents — a commercial engineer
-          and a project manager — who saw a problem up close every day, looked for a solution, found
-          that nothing quite fitted, and decided to build one.
-        </p>
-
-        <p>
-          SENSay started as a question: what if every tap on a communication board was also a data
-          point? What if, over weeks and months, those data points began to reveal something — a
-          pattern, a trigger, a trend — that no individual moment could show on its own?
-        </p>
-
-        <p>
-          What if a parent could show a doctor not just "he seemed anxious this week" but a chart
-          showing that anxiety spikes every Monday morning, consistently, for the past three months —
-          and that it correlates with a change in routine that nobody had connected before?
-        </p>
-
-        <p>
-          That is SENSay. A communication tool, yes — but one that remembers everything, learns from
-          everything, and turns the accumulated story of a child's communication into something that
-          every adult around them can finally understand.
-        </p>
-
-        <h2>Why we built SENSay</h2>
-
-        <p>
           For a long time, Kirsty and I were frustrated by how little of William we
           could actually understand. He was learning Makaton, and he was trying to
           tell us things every day — and we kept missing them.
@@ -165,15 +139,26 @@ export default function OurStory() {
 
         <p>
           That decided it. Whatever we built had to do more than give William a
-          voice — it had to leave a trail. Capture the situation around each message.
-          Make it possible to look back and actually understand. My background is
-          engineering, so data collection and analysis come naturally — and they
-          went into SENSay from day one, not as a feature, as the foundation.
+          voice — it had to leave a trail. My background is commercial engineering
+          and Kirsty's is project management, so capturing data and looking for
+          patterns isn't a feature we bolted on. It's the foundation.
         </p>
 
         <p>
-          SENSay isn't just an AAC tool. It's an intelligence layer for the adults
-          around children like William, so the small signals stop getting lost.
+          The question we kept coming back to: what if every tap on a communication
+          board was also a data point? What if, over weeks and months, those data
+          points began to reveal something — a pattern, a trigger, a trend — that
+          no single moment could show on its own? What if a parent could show a
+          doctor not just "he seemed anxious this week" but a chart showing that
+          anxiety spikes every Monday morning, consistently, for the past three
+          months — and correlates with a change in routine nobody had connected
+          before?
+        </p>
+
+        <p>
+          That is SENSay. A communication tool, yes — but one that remembers,
+          learns, and turns the accumulated story of a child's communication into
+          something every adult around them can finally understand.
         </p>
 
         <p style={{fontSize:13, color:'var(--muted)', marginTop:'-0.25rem', marginBottom:'2rem', fontWeight:600}}>
