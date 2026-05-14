@@ -146,10 +146,39 @@ export default function OurStory() {
           every adult around them can finally understand.
         </p>
 
-        <div className="placeholder-block">
-          <div className="placeholder-block__label">The moment you decided to build it — optional</div>
-          <p>Was there a specific conversation, appointment or moment of frustration that crystallised the decision? If so, it belongs here. Specific moments are more powerful than general descriptions.</p>
-        </div>
+        <h2>Why we built SENSay</h2>
+
+        <p>
+          For a long time, Kirsty and I were frustrated by how little of William we
+          could actually understand. He was learning Makaton, and he was trying to
+          tell us things every day — and we kept missing them.
+        </p>
+
+        <p>
+          The moment that pushed me from "we should build this" to "we have to build
+          this" was a school incident. William was excluded from a classroom session,
+          and no one could tell us what had actually happened beforehand. What had
+          set him off. What he'd been trying to communicate. What the adults in the
+          room had missed. There was no record. There was no context. There was just
+          an outcome.
+        </p>
+
+        <p>
+          That decided it. Whatever we built had to do more than give William a
+          voice — it had to leave a trail. Capture the situation around each message.
+          Make it possible to look back and actually understand. My background is
+          engineering, so data collection and analysis come naturally — and they
+          went into SENSay from day one, not as a feature, as the foundation.
+        </p>
+
+        <p>
+          SENSay isn't just an AAC tool. It's an intelligence layer for the adults
+          around children like William, so the small signals stop getting lost.
+        </p>
+
+        <p style={{fontSize:13, color:'var(--muted)', marginTop:'-0.25rem', marginBottom:'2rem', fontWeight:600}}>
+          — Neil Dickinson, co-founder & CTO
+        </p>
 
         <h2>What we believe</h2>
 
