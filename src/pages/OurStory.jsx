@@ -191,9 +191,8 @@ export default function OurStory() {
 
         <p>
           SENSay is preparing for its Q3 2026 pilot programme, working with a small group of families
-          and schools across the UK to refine the platform ahead of wider rollout. We are currently
-          seeking seed investment of £350,000 to accelerate development and bring SENSay to the
-          families and schools that need it most.
+          and schools across the UK to refine the platform ahead of wider rollout.
+          We are accelerating development to bring SENSay to the families and schools that need it most.
         </p>
 
         <p>
