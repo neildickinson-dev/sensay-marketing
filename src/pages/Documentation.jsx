@@ -2,45 +2,6 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './pages.css'
 
-const GUIDES = [
-  {
-    icon: '🚀', bg: '#eaf7ff', tag: 'Getting started',
-    title: 'Setting up SENSay for the first time',
-    desc: 'Create an account, set up your child\'s profile, choose your first symbols, and make your first communication in under 10 minutes.',
-    time: '10 min read', available: false,
-  },
-  {
-    icon: '🎨', bg: '#edfff4', tag: 'Communication board',
-    title: 'Configuring your child\'s communication board',
-    desc: 'How to add, remove and organise symbols. Choosing the right number of options. Using photos and custom images. Growing the board as your child develops.',
-    time: '15 min read', available: false,
-  },
-  {
-    icon: '📊', bg: '#fffbee', tag: 'AI analytics',
-    title: 'Understanding your AI insights and reports',
-    desc: 'How to read the weekly insight report. What the pattern analysis is telling you. How to share reports with schools and healthcare professionals.',
-    time: '12 min read', available: false,
-  },
-  {
-    icon: '🏫', bg: '#fff3f3', tag: 'For schools',
-    title: 'Setting up a classroom licence — SENCO guide',
-    desc: 'Managing multiple children under one Education plan. Connecting with parent accounts. Generating EHCP evidence reports. Dashboard walkthrough.',
-    time: '20 min read', available: false,
-  },
-  {
-    icon: '🏥', bg: '#edfff4', tag: 'For healthcare',
-    title: 'Using SENSay for clinical assessment',
-    desc: 'Accessing the longitudinal data view. Exporting reports for clinical documentation. Understanding the false-positive flagging system.',
-    time: '15 min read', available: false,
-  },
-  {
-    icon: '📱', bg: '#eaf7ff', tag: 'Technical',
-    title: 'Using SENSay offline and syncing data',
-    desc: 'How offline mode works. When data syncs. What happens when two devices log events at the same time. Troubleshooting sync issues.',
-    time: '8 min read', available: false,
-  },
-]
-
 const CHARITIES = [
   {
     name: 'Communication Matters',
@@ -101,13 +62,10 @@ const CHARITIES = [
 const DOWNLOADS = [
   { icon: '📋', title: 'SENSay terms and conditions', desc: 'Full terms of service governing use of the SENSay platform.', href: '/terms' },
   { icon: '🔒', title: 'SENSay privacy policy', desc: 'How we collect, use and protect your data and your child\'s data.', href: '/privacy' },
-  { icon: '🏫', title: 'School data processing agreement', desc: 'The DPA for Education plan subscribers, as required under UK GDPR Article 28.', href: '#', placeholder: true },
-  { icon: '🏥', title: 'Healthcare data processing agreement', desc: 'The DPA for Health plan subscribers, including NHS-specific provisions.', href: '#', placeholder: true },
-  { icon: '👶', title: 'Children\'s Code compliance statement', desc: 'How SENSay complies with the ICO Age Appropriate Design Code.', href: '#', placeholder: true },
 ]
 
 export default function Documentation() {
-  const [activeTab, setActiveTab] = useState('guides')
+  const [activeTab, setActiveTab] = useState('charities')
 
   return (
     <>
@@ -125,7 +83,6 @@ export default function Documentation() {
         {/* Tabs */}
         <div style={{display:'flex',gap:8,marginBottom:'2.5rem',flexWrap:'wrap'}}>
           {[
-            ['guides',    '📖 Learning guides'],
             ['charities', '🤝 Useful organisations'],
             ['docs',      '📄 Official documents'],
           ].map(([id, label]) => (
@@ -141,40 +98,6 @@ export default function Documentation() {
             >{label}</button>
           ))}
         </div>
-
-        {/* GUIDES */}
-        {activeTab === 'guides' && (
-          <div>
-            <div style={{background:'#fffbee',border:'1px solid #ffe082',borderRadius:12,padding:'1rem 1.25rem',marginBottom:'1.75rem',fontSize:14,color:'#92610a',fontWeight:600}}>
-              📝 Our learning guides are in development and will be published ahead of the Q3 2026 pilot. Register your interest below to be notified when they go live.
-            </div>
-            <div className="card-grid">
-              {GUIDES.map(g => (
-                <div key={g.title} className="content-card" style={{opacity:0.82}}>
-                  <div className="content-card__img" style={{background:g.bg}}>{g.icon}</div>
-                  <div className="content-card__body">
-                    <div className="content-card__tag">{g.tag}</div>
-                    <div className="content-card__title">{g.title}</div>
-                    <p className="content-card__desc">{g.desc}</p>
-                  </div>
-                  <div className="content-card__footer" style={{display:'flex',justifyContent:'space-between',alignItems:'center'}}>
-                    <span>{g.time}</span>
-                    <span style={{fontSize:11,fontWeight:700,color:'var(--muted)',letterSpacing:0.5}}>COMING SOON</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div style={{marginTop:'2.5rem',background:'var(--dark)',borderRadius:20,padding:'2.5rem',textAlign:'center'}}>
-              <div style={{fontFamily:'var(--font-display)',fontWeight:900,fontSize:'1.3rem',color:'#fff',marginBottom:8}}>Be the first to access our guides</div>
-              <p style={{color:'rgba(255,255,255,0.5)',fontSize:14,marginBottom:'1.5rem'}}>We will notify you when learning guides and resources are published.</p>
-              <div style={{display:'flex',gap:10,justifyContent:'center',flexWrap:'wrap'}}>
-                <input type="email" placeholder="your@email.com" className="form-input"
-                  style={{maxWidth:280,background:'rgba(255,255,255,0.08)',borderColor:'rgba(255,255,255,0.15)',color:'#fff'}} />
-                <button className="btn btn--primary">Notify me</button>
-              </div>
-            </div>
-          </div>
-        )}
 
         {/* CHARITIES */}
         {activeTab === 'charities' && (
@@ -227,25 +150,14 @@ export default function Documentation() {
             </div>
             <div style={{display:'flex',flexDirection:'column',gap:'0.75rem'}}>
               {DOWNLOADS.map(d => (
-                d.placeholder ? (
-                  <div key={d.title} style={{background:'var(--light)',borderRadius:12,padding:'1.25rem 1.5rem',border:'1.5px dashed #cbd5e1',display:'flex',gap:'1rem',alignItems:'center',opacity:0.7}}>
-                    <span style={{fontSize:28,flexShrink:0}}>{d.icon}</span>
-                    <div style={{flex:1}}>
-                      <div style={{fontFamily:'var(--font-display)',fontWeight:800,fontSize:'0.95rem',color:'var(--dark)',marginBottom:3}}>{d.title}</div>
-                      <div style={{fontSize:13,color:'var(--muted)'}}>{d.desc}</div>
-                    </div>
-                    <span style={{fontSize:11,fontWeight:800,color:'var(--muted)',letterSpacing:0.5,textTransform:'uppercase',flexShrink:0}}>Coming soon</span>
+                <Link key={d.title} to={d.href} style={{background:'#fff',borderRadius:12,padding:'1.25rem 1.5rem',border:'1px solid #e2e8f0',display:'flex',gap:'1rem',alignItems:'center',textDecoration:'none',transition:'box-shadow 0.2s'}}>
+                  <span style={{fontSize:28,flexShrink:0}}>{d.icon}</span>
+                  <div style={{flex:1}}>
+                    <div style={{fontFamily:'var(--font-display)',fontWeight:800,fontSize:'0.95rem',color:'var(--dark)',marginBottom:3}}>{d.title}</div>
+                    <div style={{fontSize:13,color:'var(--muted)'}}>{d.desc}</div>
                   </div>
-                ) : (
-                  <Link key={d.title} to={d.href} style={{background:'#fff',borderRadius:12,padding:'1.25rem 1.5rem',border:'1px solid #e2e8f0',display:'flex',gap:'1rem',alignItems:'center',textDecoration:'none',transition:'box-shadow 0.2s'}}>
-                    <span style={{fontSize:28,flexShrink:0}}>{d.icon}</span>
-                    <div style={{flex:1}}>
-                      <div style={{fontFamily:'var(--font-display)',fontWeight:800,fontSize:'0.95rem',color:'var(--dark)',marginBottom:3}}>{d.title}</div>
-                      <div style={{fontSize:13,color:'var(--muted)'}}>{d.desc}</div>
-                    </div>
-                    <span style={{color:'var(--blue)',fontWeight:700,fontSize:18}}>→</span>
-                  </Link>
-                )
+                  <span style={{color:'var(--blue)',fontWeight:700,fontSize:18}}>→</span>
+                </Link>
               ))}
             </div>
             <div className="prose" style={{marginTop:'2rem'}}>

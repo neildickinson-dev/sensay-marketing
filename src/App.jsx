@@ -6,7 +6,6 @@ import Home from './pages/Home.jsx'
 import OurStory from './pages/OurStory.jsx'
 import About from './pages/About.jsx'
 import Senco from './pages/Senco.jsx'
-import Blog from './pages/Blog.jsx'
 import Press from './pages/Press.jsx'
 import Contact from './pages/Contact.jsx'
 import Privacy from './pages/Privacy.jsx'
@@ -38,7 +37,6 @@ export default function App() {
         <Route path="/our-story" element={<Layout><ScrollToTop /><OurStory /></Layout>} />
         <Route path="/about" element={<Layout><ScrollToTop /><About /></Layout>} />
         <Route path="/senco" element={<Layout><ScrollToTop /><Senco /></Layout>} />
-        <Route path="/blog" element={<Layout><ScrollToTop /><Blog /></Layout>} />
         <Route path="/press" element={<Layout><ScrollToTop /><Press /></Layout>} />
         <Route path="/contact" element={<Layout><ScrollToTop /><Contact /></Layout>} />
         <Route path="/privacy" element={<Layout><ScrollToTop /><Privacy /></Layout>} />

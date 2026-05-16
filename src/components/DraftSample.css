@@ -74,3 +74,29 @@
 @media (max-width: 640px) {
   .draft-block { padding: 1.25rem; }
 }
+
+.draft-block__example {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: var(--green, #00A651);
+  color: #fff;
+  border-radius: 8px;
+  margin: 0 0 1rem;
+  font-size: 13px;
+}
+.draft-block__example-tag {
+  background: rgba(255,255,255,0.22);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  font-size: 11px;
+}
+.draft-block__example-text {
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .draft-block__example { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
+}
