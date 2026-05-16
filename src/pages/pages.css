@@ -264,3 +264,26 @@
 @media (max-width: 640px) {
   .contact-grid { grid-template-columns: 1fr; }
 }
+
+/* Phone-size compression for shared page hero. Without this, the hero
+   overflows the viewport on iPhone SE (777px hero in a 667px screen),
+   hiding the rest of the page below the fold. */
+@media (max-width: 480px) {
+  .page-hero {
+    padding: 2.5rem 1.25rem 2rem;
+  }
+  .page-hero__tag {
+    margin-bottom: 0.6rem;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+  .page-hero h1 {
+    font-size: 1.65rem;
+    line-height: 1.18;
+    margin-bottom: 0.75rem;
+  }
+  .page-hero p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+}
