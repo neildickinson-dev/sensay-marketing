@@ -35,7 +35,6 @@ export default function Nav() {
               ~1040px, fall back to "Schools" as the label or promote to a dropdown. */}
           <Link to="/senco"      onClick={() => setMenuOpen(false)}>For schools</Link>
           <Link to="/our-story"  onClick={() => setMenuOpen(false)}>Our story</Link>
-          <Link to="/blog" onClick={() => setMenuOpen(false)}>Blog</Link>
           <Link to="/documentation" onClick={() => setMenuOpen(false)}>Resources</Link>
           {isHome ? (
             <a href="#pricing" onClick={() => setMenuOpen(false)}>Pricing</a>

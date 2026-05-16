@@ -32,7 +32,7 @@ const TABS = [
   },
   {
     id: 'health',
-    label: '⚕️ Healthcare',
+    label: '⚕️ Clinical',
     color: 'yellow',
     heading: 'Longitudinal evidence, not session snapshots',
     body: "Speech therapists, paediatricians, and specialist nurses see a child's communication trajectory across months, not minutes. Cross-context analytics reveal how communication shifts between 1:1 and group, morning and afternoon, familiar and unfamiliar adults. Auto-generated quarterly summaries align to clinical reporting frameworks.",

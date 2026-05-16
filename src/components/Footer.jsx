@@ -12,7 +12,6 @@ const LINKS = {
   Company: [
     { label: 'About SENSay',   href: '/about',      internal: true },
     { label: 'Our story',      href: '/our-story',  internal: true },
-    { label: 'Blog',           href: '/blog',       internal: true },
     { label: 'Documentation',  href: '/documentation', internal: true },
     { label: 'Press & media',  href: '/press',      internal: true },
   ],

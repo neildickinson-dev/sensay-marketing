@@ -74,10 +74,9 @@ export default function Press() {
           ))}
         </div>
 
-        <div className="placeholder-block">
-          <div className="placeholder-block__label">Assets — coming soon</div>
-          <p>Media asset downloads will be available here shortly. In the meantime, contact press@sensay.uk for any specific assets you need.</p>
-        </div>
+        <p style={{fontSize:13, color:'var(--muted)', margin:'0.75rem 0 0'}}>
+          For high-resolution assets, email <a href="mailto:press@sensay.uk">press@sensay.uk</a>.
+        </p>
 
         <h2>Press contact</h2>
         <p>
