@@ -47,7 +47,7 @@ export default function Press() {
           <li>Pilot programme: Q3 2026</li>
           <li>Seeking: £350,000 seed investment at £2M initial valuation</li>
           <li>Website: sensay.uk</li>
-          <li>Press contact: press@sensay.uk</li>
+          <li>Press contact: hello@sensay.uk</li>
         </ul>
 
         <h2>What makes SENSay different</h2>
@@ -75,13 +75,13 @@ export default function Press() {
         </div>
 
         <p style={{fontSize:13, color:'var(--muted)', margin:'0.75rem 0 0'}}>
-          For high-resolution assets, email <a href="mailto:press@sensay.uk">press@sensay.uk</a>.
+          For high-resolution assets, email <a href="mailto:hello@sensay.uk">hello@sensay.uk</a>.
         </p>
 
         <h2>Press contact</h2>
         <p>
           For interview requests, press enquiries or media assets, please contact:<br />
-          <a href="mailto:press@sensay.uk">press@sensay.uk</a><br />
+          <a href="mailto:hello@sensay.uk">hello@sensay.uk</a><br />
           We aim to respond to all press enquiries within 24 hours.
         </p>
 

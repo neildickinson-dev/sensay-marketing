@@ -21,10 +21,10 @@ const LINKS = {
     { label: 'Terms of service',href: '/terms',     internal: true },
   ],
   Contact: [
-    { label: 'info@sensay.uk',        href: 'mailto:info@sensay.uk',        internal: false },
-    { label: 'support@sensay.uk',     href: 'mailto:support@sensay.uk',     internal: false },
-    { label: 'education@sensay.uk',   href: 'mailto:education@sensay.uk',   internal: false },
-    { label: 'healthcare@sensay.uk',  href: 'mailto:healthcare@sensay.uk',  internal: false },
+    { label: 'hello@sensay.uk',        href: 'mailto:hello@sensay.uk',        internal: false },
+    { label: 'hello@sensay.uk',     href: 'mailto:hello@sensay.uk',     internal: false },
+    { label: 'hello@sensay.uk',   href: 'mailto:hello@sensay.uk',   internal: false },
+    { label: 'hello@sensay.uk',  href: 'mailto:hello@sensay.uk',  internal: false },
   ],
 }
 

@@ -46,7 +46,7 @@ const FAQS = [
 ]
 
 const PILOT_MAILTO =
-  'mailto:senco@sensay.uk?subject=Pilot%20interest%20%E2%80%94%20%5Bschool%20name%5D'
+  'mailto:hello@sensay.uk?subject=Pilot%20interest%20%E2%80%94%20%5Bschool%20name%5D'
 
 export default function Senco() {
   const [openFaq, setOpenFaq] = useState(0)
@@ -204,7 +204,7 @@ export default function Senco() {
               <div className="founder-note__sig">
                 <div className="founder-note__name">— Neil Dickinson, co-founder, SENSay</div>
                 <div className="founder-note__contact">
-                  <a href="mailto:neil@sensay.uk">neil@sensay.uk</a>
+                  <a href="mailto:hello@sensay.uk">hello@sensay.uk</a>
                   <br />
                   Greenfield House, Halifax Road, Liversedge, WF15 8HL
                 </div>

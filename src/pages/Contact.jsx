@@ -2,13 +2,13 @@ import React, { useState } from 'react'
 import './pages.css'
 
 const CONTACTS = [
-  { label: 'General enquiries',  value: 'info@sensay.uk',        desc: 'General questions about SENSay, the platform or getting started' },
-  { label: 'Sales',              value: 'sales@sensay.uk',       desc: 'Licensing, plans and pricing enquiries' },
-  { label: 'Parents & carers',   value: 'parents@sensay.uk',     desc: 'Support and questions for families using SENSay at home' },
-  { label: 'Technical support',  value: 'support@sensay.uk',     desc: 'Help with the app, technical issues or account problems' },
-  { label: 'Healthcare',         value: 'healthcare@sensay.uk',  desc: 'Clinical enquiries, NHS integration and specialist licences' },
-  { label: 'Education',          value: 'education@sensay.uk',   desc: 'School licences, SENCO enquiries and the pilot programme' },
-  { label: 'Accounts & billing', value: 'accounts@sensay.uk',    desc: 'Invoices, billing queries and subscription management' },
+  { label: 'General enquiries',  value: 'hello@sensay.uk',        desc: 'General questions about SENSay, the platform or getting started' },
+  { label: 'Sales',              value: 'hello@sensay.uk',       desc: 'Licensing, plans and pricing enquiries' },
+  { label: 'Parents & carers',   value: 'hello@sensay.uk',     desc: 'Support and questions for families using SENSay at home' },
+  { label: 'Technical support',  value: 'hello@sensay.uk',     desc: 'Help with the app, technical issues or account problems' },
+  { label: 'Healthcare',         value: 'hello@sensay.uk',  desc: 'Clinical enquiries, NHS integration and specialist licences' },
+  { label: 'Education',          value: 'hello@sensay.uk',   desc: 'School licences, SENCO enquiries and the pilot programme' },
+  { label: 'Accounts & billing', value: 'hello@sensay.uk',    desc: 'Invoices, billing queries and subscription management' },
 ]
 
 export default function Contact() {
@@ -106,7 +106,7 @@ export default function Contact() {
           <div>
             <div style={{fontSize:11,fontWeight:800,letterSpacing:1.5,textTransform:'uppercase',color:'var(--muted)',marginBottom:8}}>Q3 2026 pilot</div>
             <p style={{fontSize:14,color:'var(--mid)',lineHeight:1.7,margin:'0 0 12px'}}>Free pilot places available for families and schools ahead of our full launch.</p>
-            <a href="mailto:education@sensay.uk?subject=Pilot programme interest" className="btn btn--primary" style={{fontSize:13,padding:'10px 20px'}}>Register interest</a>
+            <a href="mailto:hello@sensay.uk?subject=Pilot programme interest" className="btn btn--primary" style={{fontSize:13,padding:'10px 20px'}}>Register interest</a>
           </div>
         </div>
 
