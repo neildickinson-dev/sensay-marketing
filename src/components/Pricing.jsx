@@ -33,7 +33,7 @@ const PLANS = [
       'Priority support',
     ],
     cta: 'Get classroom licence',
-    href: 'mailto:schools@sensay.uk',
+    href: 'mailto:hello@sensay.uk',
     featured: true,
   },
   {
@@ -50,7 +50,7 @@ const PLANS = [
       'Dedicated account manager',
     ],
     cta: 'Contact us',
-    href: 'mailto:health@sensay.uk',
+    href: 'mailto:hello@sensay.uk',
     featured: false,
   },
 ]

@@ -65,7 +65,7 @@ export default function Testimonials() {
               Book a pilot conversation →
             </a>
             <a
-              href="mailto:parents@sensay.uk?subject=Waiting%20list"
+              href="mailto:hello@sensay.uk?subject=Waiting%20list"
               className="btn btn--outline"
             >
               Join the parent waiting list

@@ -135,7 +135,7 @@ export default function Documentation() {
             </div>
             <div className="prose" style={{marginTop:'2rem'}}>
               <p style={{fontSize:13}}>
-                <strong>Know of a useful organisation we've missed?</strong> Email us at <a href="mailto:info@sensay.uk">info@sensay.uk</a> and
+                <strong>Know of a useful organisation we've missed?</strong> Email us at <a href="mailto:hello@sensay.uk">hello@sensay.uk</a> and
                 we'll consider adding it. We only list organisations that offer free resources and are appropriate for all families.
               </p>
             </div>
@@ -163,7 +163,7 @@ export default function Documentation() {
             <div className="prose" style={{marginTop:'2rem'}}>
               <p style={{fontSize:13,color:'var(--muted)'}}>
                 For data processing agreements and other legal documentation required for your organisation,
-                please contact <a href="mailto:info@sensay.uk">info@sensay.uk</a>.
+                please contact <a href="mailto:hello@sensay.uk">hello@sensay.uk</a>.
               </p>
             </div>
           </div>

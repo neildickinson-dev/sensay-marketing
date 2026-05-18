@@ -71,7 +71,7 @@ export default function Privacy() {
           <SECTION id="who-we-are" title="1. Who we are">
             <p>SENSay Ltd (<strong>"SENSay"</strong>, <strong>"we"</strong>, <strong>"us"</strong>) is the data controller for personal data collected through sensay.uk and the SENSay application.</p>
             <p><strong>Registered office:</strong> Greenfield House, Halifax Road, Liversedge, WF15 8HL, England</p>
-            <p><strong>Data protection contact:</strong> <a href="mailto:info@sensay.uk">info@sensay.uk</a></p>
+            <p><strong>Data protection contact:</strong> <a href="mailto:hello@sensay.uk">hello@sensay.uk</a></p>
             <p>We are registered with the Information Commissioner's Office (ICO). Our ICO registration number will be published here once confirmed.</p>
           </SECTION>
 
@@ -125,7 +125,7 @@ export default function Privacy() {
               <li>AI analysis of child communication data is performed solely to generate insights for that child's benefit — not for product improvement without consent</li>
               <li>We do not use nudge techniques, push notifications, or engagement-maximising design in the child-facing interface</li>
               <li>Child data is stored on UK/EU servers only and is not transferred to countries without adequate data protection</li>
-              <li>Parents and authorised carers can request full deletion of a child's data at any time by contacting <a href="mailto:info@sensay.uk">info@sensay.uk</a></li>
+              <li>Parents and authorised carers can request full deletion of a child's data at any time by contacting <a href="mailto:hello@sensay.uk">hello@sensay.uk</a></li>
             </ul>
           </SECTION>
 
@@ -164,7 +164,7 @@ export default function Privacy() {
           </SECTION>
 
           <SECTION id="your-rights" title="9. Your rights under UK GDPR">
-            <p>You have the following rights. To exercise any of them, contact <a href="mailto:info@sensay.uk">info@sensay.uk</a>. We will respond within one calendar month.</p>
+            <p>You have the following rights. To exercise any of them, contact <a href="mailto:hello@sensay.uk">hello@sensay.uk</a>. We will respond within one calendar month.</p>
             <ul>
               <li><strong>Right of access (Art. 15):</strong> request a copy of the personal data we hold about you</li>
               <li><strong>Right to rectification (Art. 16):</strong> correct inaccurate or incomplete data</li>
@@ -210,7 +210,7 @@ export default function Privacy() {
           <SECTION id="contact" title="13. Contact and complaints">
             <p>For any privacy queries, data subject requests, or to report a concern:</p>
             <ul>
-              <li><strong>Email:</strong> <a href="mailto:info@sensay.uk">info@sensay.uk</a></li>
+              <li><strong>Email:</strong> <a href="mailto:hello@sensay.uk">hello@sensay.uk</a></li>
               <li><strong>Post:</strong> SENSay Ltd, Greenfield House, Halifax Road, Liversedge, WF15 8HL</li>
             </ul>
             <p>We take all privacy concerns seriously and will acknowledge your contact within 2 working days.</p>
@@ -221,7 +221,7 @@ export default function Privacy() {
           <p style={{fontSize:13,color:'var(--muted)'}}>
             <strong>Note:</strong> This policy should be reviewed by a qualified solicitor with data protection expertise
             before going live, particularly regarding the ICO registration number, DPA references with processors, and
-            the Schedule 1 DPA 2018 conditions cited for special category data. Contact <a href="mailto:info@sensay.uk">info@sensay.uk</a> with any queries.
+            the Schedule 1 DPA 2018 conditions cited for special category data. Contact <a href="mailto:hello@sensay.uk">hello@sensay.uk</a> with any queries.
           </p>
 
         </div>
