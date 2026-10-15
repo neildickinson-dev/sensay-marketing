@@ -24,7 +24,7 @@ const CHARITIES = [
   {
     name: 'Contact',
     url: 'https://contact.org.uk',
-    desc: 'Formerly Contact a Family — supports families with disabled children. Excellent helpline and guides on EHCPs, benefits and local support.',
+    desc: 'Formerly Contact a Family. Supports families with disabled children. Excellent helpline and guides on EHCPs, benefits and local support.',
     tag: 'Families',
   },
   {
@@ -54,13 +54,13 @@ const CHARITIES = [
   {
     name: 'Speech and Language UK',
     url: 'https://speechandlanguage.org.uk',
-    desc: 'Formerly AFASIC — supports children and young people with speech, language and communication needs, and the families and professionals around them.',
+    desc: 'Formerly AFASIC. Supports children and young people with speech, language and communication needs, and the families and professionals around them.',
     tag: 'Speech & language',
   },
 ]
 
 const DOWNLOADS = [
-  { icon: '📋', title: 'SENSay terms and conditions', desc: 'Full terms of service governing use of the SENSay platform.', href: '/terms' },
+  { icon: '📋', title: 'SENSay terms and conditions', desc: 'The terms that apply when you use SENSay.', href: '/terms' },
   { icon: '🔒', title: 'SENSay privacy policy', desc: 'How we collect, use and protect your data and your child\'s data.', href: '/privacy' },
 ]
 
@@ -83,8 +83,8 @@ export default function Documentation() {
         {/* Tabs */}
         <div style={{display:'flex',gap:8,marginBottom:'2.5rem',flexWrap:'wrap'}}>
           {[
-            ['charities', '🤝 Useful organisations'],
-            ['docs',      '📄 Official documents'],
+            ['charities', 'Useful organisations'],
+            ['docs',      'Official documents'],
           ].map(([id, label]) => (
             <button key={id}
               onClick={() => setActiveTab(id)}
@@ -106,7 +106,7 @@ export default function Documentation() {
               <p>
                 The following organisations provide free, high-quality resources for families, schools and
                 healthcare professionals supporting children with speech, language and communication needs.
-                All links open the organisation's own website — SENSay is not affiliated with any of these
+                All links open the organisation's own website. SENSay is not affiliated with any of these
                 organisations and does not receive any referral fees.
               </p>
             </div>
@@ -151,7 +151,7 @@ export default function Documentation() {
             <div style={{display:'flex',flexDirection:'column',gap:'0.75rem'}}>
               {DOWNLOADS.map(d => (
                 <Link key={d.title} to={d.href} style={{background:'#fff',borderRadius:12,padding:'1.25rem 1.5rem',border:'1px solid #e2e8f0',display:'flex',gap:'1rem',alignItems:'center',textDecoration:'none',transition:'box-shadow 0.2s'}}>
-                  <span style={{fontSize:28,flexShrink:0}}>{d.icon}</span>
+                  <span style={{fontSize:28,flexShrink:0}} aria-hidden="true">{d.icon}</span>
                   <div style={{flex:1}}>
                     <div style={{fontFamily:'var(--font-display)',fontWeight:800,fontSize:'0.95rem',color:'var(--dark)',marginBottom:3}}>{d.title}</div>
                     <div style={{fontSize:13,color:'var(--muted)'}}>{d.desc}</div>

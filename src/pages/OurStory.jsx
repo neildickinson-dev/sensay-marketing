@@ -8,9 +8,9 @@ export default function OurStory() {
       <div className="page-hero">
         <div className="stripe" style={{position:'absolute',bottom:0,left:0,right:0}} />
         <div className="page-hero-inner">
-          <div className="page-hero__tag">Our Story</div>
+          <div className="page-hero__tag">Our story</div>
           <h1>Learning to listen with our eyes</h1>
-          <p>SENSay didn't start in a boardroom. It started at home, with William — our amazing, non-verbal ten-year-old — and a question every SEN parent knows: how do I truly understand what my child is telling me?</p>
+          <p>SENSay didn't start in a boardroom. It started at home, with William, our amazing, non-verbal ten-year-old, and a question every SEN parent knows: how do I truly understand what my child is telling me?</p>
         </div>
       </div>
 
@@ -30,7 +30,7 @@ export default function OurStory() {
             "We have been learning to listen using our eyes rather than our ears."
           </p>
           <p style={{fontSize:13, color:'var(--muted)', marginTop:8, marginBottom:0, fontWeight:600}}>
-            — Neil Dickinson, Co-founder & CTO
+            Neil Dickinson, co-founder and CTO
           </p>
         </div>
 
@@ -43,12 +43,12 @@ export default function OurStory() {
 
         <p>
           William is 10 years old. He has never been verbal. He is on the autistic spectrum and has
-          compound learning difficulties — and he has one of the most distinctive, powerful personalities
+          compound learning difficulties, and he has one of the most distinctive, powerful personalities
           of anyone we know. He communicates constantly. Just not with words.
         </p>
 
         <p>
-          As his mum and dad, we have spent a decade learning to read him — his expressions, his
+          As his mum and dad, we have spent a decade learning to read him: his expressions, his
           movements, his rhythms, his patterns. We have become fluent in a language that has no
           dictionary and no formal grammar. And in doing so, we have come to understand something
           that took us a long time to fully appreciate: <strong>non-verbal children are not silent.
@@ -67,14 +67,14 @@ export default function OurStory() {
           }}>
             "William is non-verbal, autistic, and has compound learning difficulties.
             He's also funny, affectionate, stubborn, and one of the most expressive
-            children I know — if you're paying attention. He's taught his dad, his
+            children I know, if you're paying attention. He's taught his dad, his
             brother, his teachers and his therapists more about patience and listening
             than anyone else in our lives. He's taught all of us how to listen with
-            our eyes. SENSay is the tool I wish we'd had years ago — the one that
+            our eyes. SENSay is the tool I wish we'd had years ago, the one that
             helps the adults around him keep up."
           </p>
           <p style={{fontSize:13, color:'var(--muted)', marginTop:12, marginBottom:0, fontWeight:600}}>
-            — Kirsty Dickinson, co-founder
+            Kirsty Dickinson, co-founder and CEO
           </p>
         </div>
 
@@ -82,7 +82,7 @@ export default function OurStory() {
 
         <p>
           If you are the parent of a non-verbal SEN child, you already know what the battles look like.
-          The school meetings where you have to explain — again — what your child can and can't do.
+          The school meetings where you have to explain, again, what your child can and can't do.
           The healthcare appointments where you describe behaviours from memory, knowing that without
           evidence, without data, your observations carry less weight than they should.
           The exhausting, relentless work of being your child's translator to a world that was
@@ -92,14 +92,14 @@ export default function OurStory() {
         <p>
           We have lived those battles. The education system. The healthcare system. The endless
           cycle of assessments, reviews and reports that ask parents to recall months of behaviour
-          from the top of their heads. We know exactly how much is lost in those gaps — and we know
+          from the top of their heads. We know exactly how much is lost in those gaps, and we know
           that what is lost matters.
         </p>
 
         <h2>The gap we kept seeing</h2>
 
         <p>
-          There are a number of methods of communicating mood and need with non-verbal children —
+          There are a number of methods of communicating mood and need with non-verbal children,
           and every family, every school, every therapist finds their own way of doing it. Physical
           cues, symbol boards, signing, picture cards. Each one helps. None of them talk to each other.
           And almost none of them generate the one thing that could transform how we support these children:
@@ -107,7 +107,7 @@ export default function OurStory() {
         </p>
 
         <p>
-          So much information is never captured. A child communicates distress on a Tuesday morning —
+          So much information is never captured. A child communicates distress on a Tuesday morning,
           but by Thursday's school meeting, that moment is gone, existing only in a parent's memory
           competing with everything else that week. A pattern that would be obvious from three months
           of data stays invisible because no one has three months of data.
@@ -125,7 +125,7 @@ export default function OurStory() {
         <p>
           For a long time, Kirsty and I were frustrated by how little of William we
           could actually understand. He was learning Makaton, and he was trying to
-          tell us things every day — and we kept missing them.
+          tell us things every day, and we kept missing them.
         </p>
 
         <p>
@@ -139,7 +139,7 @@ export default function OurStory() {
 
         <p>
           That decided it. Whatever we built had to do more than give William a
-          voice — it had to leave a trail. My background is commercial engineering
+          voice. It had to leave a trail. My background is commercial engineering
           and Kirsty's is project management, so capturing data and looking for
           patterns isn't a feature we bolted on. It's the foundation.
         </p>
@@ -147,28 +147,28 @@ export default function OurStory() {
         <p>
           The question we kept coming back to: what if every tap on a communication
           board was also a data point? What if, over weeks and months, those data
-          points began to reveal something — a pattern, a trigger, a trend — that
+          points began to reveal something (a pattern, a trigger, a trend) that
           no single moment could show on its own? What if a parent could show a
           doctor not just "he seemed anxious this week" but a chart showing that
           anxiety spikes every Monday morning, consistently, for the past three
-          months — and correlates with a change in routine nobody had connected
+          months, and correlates with a change in routine nobody had connected
           before?
         </p>
 
         <p>
-          That is SENSay. A communication tool, yes — but one that remembers,
+          That is SENSay. A communication tool, yes, but one that remembers,
           learns, and turns the accumulated story of a child's communication into
           something every adult around them can finally understand.
         </p>
 
         <p style={{fontSize:13, color:'var(--muted)', marginTop:'-0.25rem', marginBottom:'2rem', fontWeight:600}}>
-          — Neil Dickinson, co-founder & CTO
+          Neil Dickinson, co-founder and CTO
         </p>
 
         <h2>What we believe</h2>
 
         <p>
-          All machines talk to us now. Our phones, our cars, our bodies — everything generates data
+          All machines talk to us now. Our phones, our cars, our bodies: everything generates data
           that helps us understand it better. It is time that the communication of our non-verbal
           children did the same.
         </p>
@@ -176,7 +176,7 @@ export default function OurStory() {
         <p>
           We believe every non-verbal child deserves a voice. We believe every parent deserves to
           truly understand what their child is telling them. And we believe every teacher, therapist
-          and clinician deserves the evidence they need to do their jobs well — without having to
+          and clinician deserves the evidence they need to do their jobs well, without having to
           rely on the fallible, incomplete picture that currently passes for a record.
         </p>
 
@@ -190,19 +190,19 @@ export default function OurStory() {
         <h2>Where we are now</h2>
 
         <p>
-          SENSay is preparing for its Q3 2026 pilot programme, working with a small group of families
-          and schools across the UK to refine the platform ahead of wider rollout.
-          We are accelerating development to bring SENSay to the families and schools that need it most.
+          We are taking on a small group of founding schools for 2026-27, and working with them to
+          refine the app ahead of wider rollout. The family plan arrives in spring 2027 on iPhone,
+          iPad and Android.
         </p>
 
         <p>
-          If you are a parent, a school, a clinician or an investor who believes in what we are
-          building — we would genuinely love to hear from you.
+          If you are a parent, a school or a clinician who believes in what we are building, we
+          would love to hear from you.
         </p>
 
         <hr />
 
-        {/* Founder cards — Kirsty (CEO) first, Neil (CTO) second */}
+        {/* Founder cards: Kirsty (CEO) first, Neil (CTO) second */}
         <div style={{
           background:'var(--light)', borderRadius:16, padding:'2rem',
           border:'1px solid #e2e8f0', display:'flex', gap:'1.5rem',
@@ -221,14 +221,14 @@ export default function OurStory() {
               Kirsty Dickinson
             </div>
             <div style={{fontSize:13, color:'var(--muted)', marginBottom:12, fontWeight:600}}>
-              Co-founder & CEO · Parent of William
+              Co-founder and CEO · Parent of William
             </div>
             <p style={{fontSize:14, color:'var(--mid)', lineHeight:1.75, margin:'0 0 0.9rem'}}>
               Kirsty Dickinson is co-founder and CEO of SENSay. She holds a degree in
               Educational Studies and has spent over twenty years working with local
               community groups across West Yorkshire. She currently supports SEND
-              families through roles at two local charities — PCAN (the parent carer
-              forum for Kirklees) and Barnardo's — and is a governor at a specialist
+              families through roles at two local charities, PCAN (the parent carer
+              forum for Kirklees) and Barnardo's, and is a governor at a specialist
               school.
             </p>
             <p style={{fontSize:14, color:'var(--mid)', lineHeight:1.75, margin:'0 0 0.9rem'}}>
@@ -240,8 +240,8 @@ export default function OurStory() {
             </p>
             <p style={{fontSize:14, color:'var(--mid)', lineHeight:1.75, margin:0}}>
               The work is personal. Kirsty's son William is non-verbal, autistic,
-              and has a severe learning disability. SENSay exists because she brings
-              that lived experience to every part of how it's built — and because
+              and has compound learning difficulties. SENSay exists because she brings
+              that lived experience to every part of how it's built, and because
               she believes the families and professionals around children like
               William deserve tools that actually work for them.
             </p>
@@ -266,7 +266,7 @@ export default function OurStory() {
               Neil Dickinson
             </div>
             <div style={{fontSize:13, color:'var(--muted)', marginBottom:12, fontWeight:600}}>
-              Co-founder & CTO · Parent of William · Commercial & technical engineer
+              Co-founder and CTO · Parent of William · Commercial and technical engineer
             </div>
             <p style={{fontSize:14, color:'var(--mid)', lineHeight:1.75, margin:0}}>
               Neil is the father of William, a 10-year-old non-verbal child with autism and compound

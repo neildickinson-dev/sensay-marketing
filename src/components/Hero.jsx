@@ -24,25 +24,25 @@ export default function Hero() {
     <section className="hero">
       <div className="hero-inner">
         <div className="hero-text">
-          <div className="hero-badge">✨ Communication. Analytics. Insight.</div>
+          <div className="hero-badge"><span aria-hidden="true">✨</span> Communication. Analytics. Insight.</div>
           <h1>
             Every child deserves to be{' '}
             <span className="hero-accent--blue">heard</span>
-            {' '}— and{' '}
+            {', '}and{' '}
             <span className="hero-accent--green">understood</span>.
           </h1>
           <p>
-            SENSay is a two-way communication platform for non-verbal and pre-verbal children.
-            Your own photos and videos become communication tiles. Adults get suggested responses
-            and a full analytics dashboard that shows the patterns behind every interaction —
-            across home, school, and clinical settings.
+            SENSay is a two-way communication app for pre-verbal and non-verbal children.
+            Your own photos and videos become communication tiles. Adults can reply, and get AI
+            pattern reports that show what lies behind a child's messages across home, school and
+            clinical settings.
           </p>
           <div className="hero-btns">
             <a
-              href="mailto:hello@sensay.uk?subject=Pilot%20interest"
+              href="mailto:hello@sensay.uk?subject=Founding%20school%20interest"
               className="btn btn--primary"
             >
-              Book a pilot conversation →
+              Become a founding school →
             </a>
             <a href="#how-it-works" className="btn btn--outline">
               See how it works
@@ -55,7 +55,7 @@ export default function Hero() {
             <span className="demo-dot" style={{background:'#ff5f57'}} />
             <span className="demo-dot" style={{background:'#febc2e'}} />
             <span className="demo-dot" style={{background:'#28c840'}} />
-            <span className="demo-label">SENSay — Liam's board</span>
+            <span className="demo-label">SENSay: William's board</span>
           </div>
           <div className="demo-body">
             <div className="demo-prompt">How are you feeling right now?</div>
@@ -67,22 +67,21 @@ export default function Hero() {
                   onClick={() => handleTap(s.label)}
                   aria-label={s.label}
                 >
-                  <span className="symbol-emoji">{s.emoji}</span>
+                  <span className="symbol-emoji" aria-hidden="true">{s.emoji}</span>
                   <span className="symbol-label">{s.label}</span>
                 </button>
               ))}
             </div>
-            <div className={`demo-insight${tapped ? ' demo-insight--visible' : ''}`}>
+            <div className={`demo-insight${tapped ? ' demo-insight--visible' : ''}`} aria-live="polite">
               <span className="demo-insight__dot" />
               <span>
                 <strong style={{color:'var(--green)'}}>AI insight: </strong>
-                Liam has selected &ldquo;{tapped}&rdquo; — pattern analysis updating.{' '}
-                <span style={{color:'var(--blue)', fontWeight:700}}>View full report ›</span>
+                William has selected &ldquo;{tapped}&rdquo;. Pattern analysis updating.
               </span>
             </div>
           </div>
           <div className="demo-caption">
-            Adults add their own photos and videos as tiles — this is an example.
+            Adults add their own photos and videos as tiles. This is an example.
           </div>
         </div>
       </div>

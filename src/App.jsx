@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route, ScrollRestoration } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Nav from './components/Nav.jsx'
 import Footer from './components/Footer.jsx'
 import Home from './pages/Home.jsx'
@@ -14,14 +14,32 @@ import Documentation from './pages/Documentation.jsx'
 import NotFound from './pages/NotFound.jsx'
 import './App.css'
 
-function ScrollToTop() {
-  React.useEffect(() => { window.scrollTo(0, 0) }, [])
+const SITE_TITLE = 'SENSay: helping every child be heard and understood'
+
+// Scrolls to the #hash target after navigation (for example /#pricing from another
+// page), or to the top of the page when there is no hash. Also sets the tab title.
+function ScrollManager({ title }) {
+  const location = useLocation()
+  React.useEffect(() => {
+    document.title = title ? `${title} | SENSay` : SITE_TITLE
+  }, [title])
+  React.useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.slice(1)
+      const scroll = () => document.getElementById(id)?.scrollIntoView()
+      // Wait a frame so the target section has rendered.
+      requestAnimationFrame(scroll)
+    } else {
+      window.scrollTo(0, 0)
+    }
+  }, [location.pathname, location.hash])
   return null
 }
 
-function Layout({ children }) {
+function Layout({ title, children }) {
   return (
     <div className="app">
+      <ScrollManager title={title} />
       <Nav />
       <main>{children}</main>
       <Footer />
@@ -33,16 +51,16 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout><ScrollToTop /><Home /></Layout>} />
-        <Route path="/our-story" element={<Layout><ScrollToTop /><OurStory /></Layout>} />
-        <Route path="/about" element={<Layout><ScrollToTop /><About /></Layout>} />
-        <Route path="/senco" element={<Layout><ScrollToTop /><Senco /></Layout>} />
-        <Route path="/press" element={<Layout><ScrollToTop /><Press /></Layout>} />
-        <Route path="/contact" element={<Layout><ScrollToTop /><Contact /></Layout>} />
-        <Route path="/privacy" element={<Layout><ScrollToTop /><Privacy /></Layout>} />
-        <Route path="/documentation" element={<Layout><ScrollToTop /><Documentation /></Layout>} />
-        <Route path="/terms" element={<Layout><ScrollToTop /><Terms /></Layout>} />
-        <Route path="*" element={<Layout><ScrollToTop /><NotFound /></Layout>} />
+        <Route path="/" element={<Layout><Home /></Layout>} />
+        <Route path="/our-story" element={<Layout title="Our story"><OurStory /></Layout>} />
+        <Route path="/about" element={<Layout title="About"><About /></Layout>} />
+        <Route path="/senco" element={<Layout title="For schools and SENCOs"><Senco /></Layout>} />
+        <Route path="/press" element={<Layout title="Press and media"><Press /></Layout>} />
+        <Route path="/contact" element={<Layout title="Contact"><Contact /></Layout>} />
+        <Route path="/privacy" element={<Layout title="Privacy policy"><Privacy /></Layout>} />
+        <Route path="/documentation" element={<Layout title="Resources"><Documentation /></Layout>} />
+        <Route path="/terms" element={<Layout title="Terms of service"><Terms /></Layout>} />
+        <Route path="*" element={<Layout title="Page not found"><NotFound /></Layout>} />
       </Routes>
     </BrowserRouter>
   )

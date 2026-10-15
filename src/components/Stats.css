@@ -19,7 +19,9 @@
   color: rgba(255,255,255,0.45);
   margin-top: 5px;
   font-weight: 600;
-  max-width: 160px;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 600px) {
   .stats { gap: 2rem; }

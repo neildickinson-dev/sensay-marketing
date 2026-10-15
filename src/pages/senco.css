@@ -215,7 +215,7 @@
   margin-top: 2.5rem;
 }
 
-/* Responsive — least-invasive breakpoint choice: match existing 640px pattern
+/* Responsive: least-invasive breakpoint choice: match existing 640px pattern
    used in pages.css for contact-grid. Flag: not tested below 360px. */
 @media (max-width: 840px) {
   .senco-features { grid-template-columns: 1fr; }
