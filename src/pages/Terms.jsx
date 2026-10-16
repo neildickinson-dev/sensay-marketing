@@ -10,8 +10,8 @@ export default function Terms() {
         <div className="page-hero-inner">
           <div className="page-hero__tag">Legal</div>
           <h1>Terms of Service</h1>
-          {/* NEIL TO CONFIRM: update the date once the legal text has been reviewed. */}
-          <p>Last updated: October 2026. Please read these terms before using SENSay.</p>
+          {/* Solicitor review recommended before paid plans go live. */}
+          <p>Last updated: 16 October 2026. Please read these terms before using SENSay.</p>
         </div>
       </div>
 
@@ -41,8 +41,9 @@ export default function Terms() {
           <li>School and Clinician prices are shown excluding VAT. Family plan prices include VAT</li>
           <li>You may cancel at any time. Cancellation takes effect at the end of the billing period</li>
           <li>Refunds are considered on a case-by-case basis. Contact hello@sensay.uk</li>
-          {/* NEIL TO CONFIRM: payment processor(s), including app store billing for the Family plan. */}
-          <li>Card payments are processed by Stripe. SENSay does not store payment card details</li>
+          <li>School and Clinician licences are invoiced and paid by bank transfer</li>
+          <li>Family plan subscriptions bought in the app are billed by Apple (App Store) or Google (Google Play) under their terms, and are managed or cancelled in your App Store or Google Play account</li>
+          <li>SENSay never sees or stores payment card details</li>
         </ul>
 
         <h2>4. Acceptable use</h2>

@@ -33,8 +33,8 @@ export default function Privacy() {
         <div className="page-hero-inner">
           <div className="page-hero__tag">Legal</div>
           <h1>Privacy Policy</h1>
-          {/* NEIL TO CONFIRM: update the date once the policy has been reviewed. */}
-          <p>Last updated: October 2026. SENSay Ltd is committed to protecting your privacy, and the privacy of the children who use our app.</p>
+          {/* Solicitor review recommended before paid plans go live. */}
+          <p>Last updated: 16 October 2026. SENSay Ltd is committed to protecting your privacy, and the privacy of the children who use our app.</p>
         </div>
       </div>
 
@@ -85,10 +85,11 @@ export default function Privacy() {
               <li><strong>Child profile data:</strong> first name or pseudonym/alias, age range, SEN category (optional), communication board configuration and symbol preferences</li>
               <li><strong>Communication data:</strong> timestamped symbol selections, intensity ratings, session duration, caregiver context logs (activity, environment, people present)</li>
               <li><strong>Usage data:</strong> feature interactions, device type, browser type, app version (anonymised and aggregated)</li>
-              <li><strong>Payment data:</strong> processed by Stripe. We do not store full card numbers or bank details</li>
+              <li><strong>Notification contacts:</strong> the names, email addresses and mobile numbers of the adults a family chooses to notify, and the short replies those adults send back to the child's device</li>
+              <li><strong>Payment data:</strong> schools and clinicians pay by invoice. Family subscriptions bought in the app are billed by Apple or Google. We do not see or store card numbers</li>
               <li><strong>Support data:</strong> messages sent to our support team, including any information you choose to include</li>
             </ul>
-            <p>We do <strong>not</strong> collect biometric data, location data, or any data from a child's device directly. All child data is entered by an authorised adult.</p>
+            <p>We do <strong>not</strong> collect biometric data or location data. A child's communications are recorded only on a device an adult has set up and signed in, and every child profile is created and controlled by an authorised adult.</p>
           </SECTION>
 
           <SECTION id="lawful-basis" title="3. Lawful basis for processing">
@@ -135,17 +136,19 @@ export default function Privacy() {
           <SECTION id="data-sharing" title="6. Data sharing and processors">
             <p>We share data only with the following categories of third party, and only as strictly necessary to deliver the service. All processors are bound by data processing agreements (DPAs) under UK GDPR Article 28:</p>
             <ul>
-              <li><strong>Supabase Inc.:</strong> database hosting, authentication and storage, on EU/UK servers. <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Privacy policy</a></li>
-              <li><strong>Anthropic PBC:</strong> AI processing for communication pattern analysis, in the United States. Under Anthropic's commercial API terms, data we send is not used to train its models.{/* NEIL TO CONFIRM: wording matches the Anthropic contract actually in place. */} <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Privacy policy</a></li>
-              <li><strong>Stripe Inc.:</strong> payment processing. Stripe is PCI-DSS compliant. We share only the minimum data required for payment. <a href="https://stripe.com/gb/privacy" target="_blank" rel="noopener">Privacy policy</a></li>
-              <li><strong>Vercel Inc.:</strong> website and web app hosting. <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener">Privacy policy</a></li>
+              <li><strong>Supabase Inc.:</strong> database hosting, authentication and storage, in the EU (Ireland). <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Privacy policy</a></li>
+              <li><strong>Anthropic PBC:</strong> AI processing for communication pattern analysis, in the United States. We send the minimum needed (a first name or alias, never a surname or school). Under Anthropic's commercial terms, data sent through its API is not used to train its models. <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Privacy policy</a></li>
+              <li><strong>Fasthosts Internet Ltd:</strong> hosting for sensay.uk and the web app, in the United Kingdom. <a href="https://www.fasthosts.co.uk/privacy-notice" target="_blank" rel="noopener">Privacy notice</a></li>
+              <li><strong>Resend Inc.:</strong> sends message notification emails to the adults a family has chosen, in the United States. <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener">Privacy policy</a></li>
+              <li><strong>Twilio Inc.:</strong> sends message notification texts to the adults a family has chosen, in the United States. <a href="https://www.twilio.com/en-us/legal/privacy" target="_blank" rel="noopener">Privacy policy</a></li>
+              <li><strong>Apple and Google:</strong> billing for family subscriptions bought in the app (from spring 2027), as independent controllers under their own terms</li>
             </ul>
             <p>We do <strong>not</strong> sell personal data. We do not share data with advertisers. We do not share data with government bodies unless legally required to do so, in which case we will notify you where permitted by law.</p>
           </SECTION>
 
           <SECTION id="international" title="7. International transfers">
             <p>
-              Some of our processors (Anthropic, Stripe, Vercel) are based in the United States. Where personal
+              Some of our processors (Anthropic, Resend and Twilio) are based in the United States. Where personal
               data is transferred outside the UK, we ensure adequate safeguards are in place through either:
             </p>
             <ul>
@@ -153,7 +156,7 @@ export default function Privacy() {
               <li>Standard Contractual Clauses (SCCs) approved by the ICO</li>
               <li>UK International Data Transfer Agreements (IDTAs)</li>
             </ul>
-            <p>Child communication data is stored in the UK or EU. To generate insights, pseudonymised communication records are sent to Anthropic in the United States under the UK International Data Transfer Addendum. Anthropic does not use this data to train its models.</p>
+            <p>Child communication data is stored in the UK or EU. To generate insights, pseudonymised communication records are sent to Anthropic in the United States under the UK International Data Transfer Addendum to the EU Standard Contractual Clauses. Anthropic does not use this data to train its models. Notification emails and texts pass through Resend and Twilio under the same safeguards.</p>
           </SECTION>
 
           <SECTION id="retention" title="8. Data retention">

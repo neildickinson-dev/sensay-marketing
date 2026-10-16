@@ -72,10 +72,10 @@ export default function Pricing() {
         <div className="section-header">
           <div className="section-tag">Pricing</div>
           <h2>Plans for home, school and clinic</h2>
-          {/* NEIL TO CONFIRM */}
           <p>
             A child's ability to communicate (the board, the voice, sending a message) is never
-            locked behind payment. The family plan adds the adult side: AI pattern insights, weekly
+            locked behind payment, and if the AI is ever unavailable the board still sends the
+            message as it was tapped. The family plan adds the adult side: AI pattern insights, weekly
             reports, and sharing with school and other adults.
           </p>
         </div>
@@ -146,8 +146,8 @@ export default function Pricing() {
         <div className="pricing-note">
           <p>
             We are taking on a small group of founding schools for 2026-27.{' '}
-            {/* NEIL TO CONFIRM */}
-            Founding schools get a direct line into the product team.{' '}
+            The first five get their first term free, then move to the standard licence. Every
+            founding school gets a direct line into the product team.{' '}
             <a href={FOUNDING_SCHOOL_MAILTO}>Email hello@sensay.uk</a> to register your interest.
           </p>
         </div>

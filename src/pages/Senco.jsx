@@ -33,8 +33,7 @@ const FAQS = [
   },
   {
     q: "Is it compliant with the UK Children's Code and UK GDPR?",
-    // NEIL TO CONFIRM: the DPA and DPIA template promise below.
-    a: "SENSay is built to UK GDPR and the ICO Children's Code. The family controls consent, and child profiles use a first name or alias only. Our data processors are Supabase, Anthropic, Stripe and Vercel. Founding schools receive a data processing agreement and a data protection impact assessment template before any pupil data is entered.",
+    a: "SENSay is built to UK GDPR and the ICO Children's Code. The family controls consent, and child profiles use a first name or alias only. Our data processors are Supabase (database, in the EU), Fasthosts (hosting, in the UK), Anthropic (AI analysis, in the US) and Resend and Twilio (email and text notifications, in the US). Founding schools receive a data processing agreement and a data protection impact assessment template before any pupil data is entered.",
   },
   {
     q: 'Who built this?',
@@ -138,7 +137,7 @@ export default function Senco() {
             <div className="pilot-col pilot-col--accent">
               <h3 className="pilot-col__title">What founding schools get</h3>
               <ul className="pilot-col__list">
-                {/* NEIL TO CONFIRM */}
+                <li>The first five schools get their first term free, then the standard licence</li>
                 <li>
                   A direct line into the product team. We are the parents of a non-verbal child,
                   and changes based on SENCO feedback move fast
