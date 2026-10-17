@@ -13,7 +13,7 @@ const TIMELINE = [
   { year: 'Jan 2023', label: 'The idea', desc: 'SENSay began as an answer to a real family problem.' },
   { year: '2025',     label: 'Company formed', desc: 'SENSay Ltd set up and development of the app began.' },
   { year: '2026 to 2027', label: 'Founding schools', desc: 'A small group of founding schools for the 2026-27 school year.' },
-  { year: 'Spring 2027', label: 'Family plan', desc: 'The family plan arrives on iPhone, iPad and Android, connecting home and school.' },
+  { year: 'January 2027', label: 'Family plan', desc: 'The family plan arrives on iPhone, iPad and Android, connecting home and school.' },
   { year: '2028',     label: 'Wider rollout', desc: 'More schools, families and clinicians across the UK.' },
 ]
 

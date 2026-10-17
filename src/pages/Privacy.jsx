@@ -141,7 +141,7 @@ export default function Privacy() {
               <li><strong>Fasthosts Internet Ltd:</strong> hosting for sensay.uk and the web app, in the United Kingdom. <a href="https://www.fasthosts.co.uk/privacy-notice" target="_blank" rel="noopener">Privacy notice</a></li>
               <li><strong>Resend Inc.:</strong> sends message notification emails to the adults a family has chosen, in the United States. <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener">Privacy policy</a></li>
               <li><strong>Twilio Inc.:</strong> sends message notification texts to the adults a family has chosen, in the United States. <a href="https://www.twilio.com/en-us/legal/privacy" target="_blank" rel="noopener">Privacy policy</a></li>
-              <li><strong>Apple and Google:</strong> billing for family subscriptions bought in the app (from spring 2027), as independent controllers under their own terms</li>
+              <li><strong>Apple and Google:</strong> billing for family subscriptions bought in the app (from January 2027), as independent controllers under their own terms</li>
             </ul>
             <p>We do <strong>not</strong> sell personal data. We do not share data with advertisers. We do not share data with government bodies unless legally required to do so, in which case we will notify you where permitted by law.</p>
           </SECTION>

@@ -191,7 +191,7 @@ export default function OurStory() {
 
         <p>
           We are taking on a small group of founding schools for 2026-27, and working with them to
-          refine the app ahead of wider rollout. The family plan arrives in spring 2027 on iPhone,
+          refine the app ahead of wider rollout. The family plan arrives in January 2027 on iPhone,
           iPad and Android.
         </p>
 

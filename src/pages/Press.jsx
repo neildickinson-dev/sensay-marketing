@@ -33,7 +33,7 @@ export default function Press() {
             up for each child, with AI pattern reports that show long-term communication patterns to
             parents, teachers and healthcare professionals. Founded in 2025 and based in the UK,
             SENSay is taking on a small group of founding schools for 2026-27, with the family plan
-            arriving in spring 2027.
+            arriving in January 2027.
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export default function Press() {
           <li>Headquarters: United Kingdom</li>
           <li>Context: 718,838 EHCPs in England in January 2026 (Department for Education)</li>
           <li>Policy: digital Individual Support Plans proposed in the February 2026 Schools White Paper, to become statutory from September 2029, subject to legislation</li>
-          <li>Business model: subscription. School licences from £895 to £4,495 a year + VAT; family plan £7.99 a month or £79 a year including VAT (from spring 2027); clinicians £249 a year + VAT</li>
+          <li>Business model: subscription. School licences from £895 to £4,495 a year + VAT; family plan £7.99 a month or £79 a year including VAT (from January 2027); clinicians £249 a year + VAT</li>
           <li>Founding schools: a small group for 2026-27</li>
           <li>Website: sensay.uk</li>
           <li>Press contact: hello@sensay.uk</li>

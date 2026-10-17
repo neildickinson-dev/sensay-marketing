@@ -21,7 +21,7 @@ const PLANS = [
     color: '#00AEEF',
     price: '£7.99',
     period: 'a month, or £79 a year, including VAT. 14-day free trial.',
-    availability: 'Available spring 2027 on iPhone, iPad and Android',
+    availability: 'Available January 2027 on iPhone, iPad and Android',
     features: [
       'AI pattern insights',
       'Weekly reports',

@@ -119,7 +119,7 @@ export default function Contact() {
           </div>
           <div>
             <div style={labelStyle}>Family plan</div>
-            <p style={{fontSize:14,color:'var(--mid)',lineHeight:1.7,margin:'0 0 12px'}}>Coming in spring 2027 on iPhone, iPad and Android.</p>
+            <p style={{fontSize:14,color:'var(--mid)',lineHeight:1.7,margin:'0 0 12px'}}>Coming in January 2027 on iPhone, iPad and Android.</p>
             <a href="mailto:hello@sensay.uk?subject=Family%20plan%20interest" className="btn btn--outline" style={{fontSize:13,padding:'10px 20px'}}>Register interest</a>
           </div>
         </div>

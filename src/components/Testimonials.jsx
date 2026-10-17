@@ -13,7 +13,7 @@ export default function Testimonials() {
           <p>
             SENSay was designed by the parents of a non-verbal child, with input from teachers and
             therapists. We are taking on a small group of founding schools for 2026-27, and the
-            family plan arrives in spring 2027.
+            family plan arrives in January 2027.
           </p>
         </div>
 
