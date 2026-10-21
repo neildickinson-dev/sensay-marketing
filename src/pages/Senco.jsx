@@ -8,12 +8,12 @@ const FEATURES = [
   {
     icon: '🔗',
     title: 'Traceable',
-    body: 'Every claim in the draft is linked to the specific observation it came from. Audit any sentence in one click — defensible in a tribunal, trusted in a review.',
+    body: 'Every claim in the draft is linked to the specific observation it came from. Audit any sentence in one click, so you can check it against its source before you sign.',
   },
   {
     icon: '⚖️',
     title: 'Evidence-calibrated language',
-    body: 'A single observation gets cautious language. Four consistent observations get confident language. SENSay never overclaims what was seen — because Section B written to the wrong strength is Section B thrown out.',
+    body: 'A single observation gets cautious language. Four consistent observations get confident language. SENSay is built not to overclaim what was seen, because Section B written to the wrong strength is Section B thrown out.',
   },
   {
     icon: '🧭',
@@ -25,28 +25,28 @@ const FEATURES = [
 const FAQS = [
   {
     q: "Does SENSay replace the SENCO's judgement?",
-    a: 'No. SENSay drafts; the SENCO reviews and signs. Every claim is cited to source, the draft is marked "review before use," and the tool declines to draft sections where evidence is insufficient. Think of it as a very well-prepared junior colleague offering a starting draft.',
+    a: 'No. SENSay drafts and the SENCO reviews and signs. Every claim is cited to source, the draft is marked "review before use," and the tool declines to draft sections where evidence is insufficient. Think of it as a very well-prepared junior colleague offering a starting draft.',
   },
   {
     q: 'What about children already using a different AAC tool?',
-    a: 'SENSay is designed to work alongside other AAC tools. Teachers can log evidence observations into SENSay without the child needing to switch communication platforms. For schools already using Tobii Dynavox, CoughDrop, or Grid for Schools, SENSay sits above as the insight layer.',
+    a: 'SENSay is designed to work alongside other AAC tools, without the child needing to change communication system. Teachers can log observations in SENSay whichever AAC system a pupil uses, including Grid 3, TD Snap and others. SENSay does not need to replace them.',
   },
   {
     q: "Is it compliant with the UK Children's Code and UK GDPR?",
-    a: 'Yes. Consent managed by the family. Data processors: Supabase, Anthropic, Stripe, Vercel. Privacy policy undergoing legal review before go-live. A formal data-sharing agreement template is available for pilot schools.',
+    a: "SENSay is built to UK GDPR and the ICO Children's Code. The family controls consent, and child profiles use a first name or alias only. Our data processors are Supabase (database, in the EU), Fasthosts (hosting, in the UK), Anthropic (AI analysis, in the US) and Resend and Twilio (email and text notifications, in the US). Founding schools receive a data processing agreement and a data protection impact assessment template before any pupil data is entered.",
   },
   {
     q: 'Who built this?',
-    a: "Neil Dickinson (co-founder and technical lead) and Kirsty Dickinson (CEO). Both are parents of a non-verbal child. Jo Holmes, an independent AAC expert, has validated SENSay's cross-context analytics as genuinely unique in the market.",
+    a: 'Kirsty Dickinson (co-founder and CEO) and Neil Dickinson (co-founder and CTO), the parents of a non-verbal child.',
   },
   {
-    q: 'How much does it cost after pilot?',
-    a: 'Founding partner pricing is offered to pilot schools. Full pricing is tiered by school type and size. Typical mainstream primary: £5,000–£8,000/year. Typical special school: up to £52,000/year full tier. See Pricing for details.',
+    q: 'How much does it cost?',
+    a: 'School licences are annual and invoiced annually in advance: Starter £895 a year (up to 5 pupils), Standard £1,495 (up to 15 pupils), Large £2,295 (up to 30 pupils) and Special school £4,495 (up to 80 pupils, then £45 per extra pupil). Prices are + VAT. Maintained schools, academies and most independent and non-maintained special schools can reclaim the VAT. See Pricing on the home page.',
   },
 ]
 
 const PILOT_MAILTO =
-  'mailto:hello@sensay.uk?subject=Pilot%20interest%20%E2%80%94%20%5Bschool%20name%5D'
+  'mailto:hello@sensay.uk?subject=Founding%20school%20interest%3A%20%5Bschool%20name%5D'
 
 export default function Senco() {
   const [openFaq, setOpenFaq] = useState(0)
@@ -58,16 +58,15 @@ export default function Senco() {
         <div className="stripe" style={{ position: 'absolute', bottom: 0, left: 0, right: 0 }} />
         <div className="page-hero-inner">
           <div className="page-hero__tag">For schools &amp; SENCOs</div>
-          <h1>EHCP Section B drafts, from classroom evidence, in under a minute.</h1>
+          <h1>EHCP Section B drafts, from classroom evidence.</h1>
           <p>
-            SENSay's EHCP drafting tool takes a pupil's classified classroom observations — logged
-            during normal AAC activities — and drafts professional Section B narratives with every
-            claim cited to source. The SENCO reviews, edits, and signs. Generation takes 20–40
-            seconds.
+            SENSay's EHCP drafting tool takes a pupil's classroom observations, logged during normal
+            AAC activities, and drafts professional Section B narratives with every claim cited to
+            source. The SENCO reviews, edits and signs.
           </p>
           <div className="senco-hero-cta">
             <a href={PILOT_MAILTO} className="btn btn--primary">
-              Book a pilot — Summer Term 2026
+              Become a founding school for 2026-27
             </a>
             <a href="#see-it-working" className="btn btn--outline">
               See the output →
@@ -83,7 +82,7 @@ export default function Senco() {
             {FEATURES.map(f => (
               <div key={f.title} className="senco-feature">
                 <div className="senco-feature__icon" aria-hidden="true">{f.icon}</div>
-                <h3 className="senco-feature__title">{f.title}</h3>
+                <h2 className="senco-feature__title">{f.title}</h2>
                 <p className="senco-feature__body">{f.body}</p>
               </div>
             ))}
@@ -96,12 +95,12 @@ export default function Senco() {
         <div className="section-inner senco-seeit">
           <div className="section-header">
             <div className="section-tag">Sample output</div>
-            <h2>Real output, from 19 evidence observations</h2>
+            <h2>Sample output, from 19 fictional observations</h2>
             <p>
-              Below is an excerpt from an EHCP Section B draft SENSay generated this week for a
-              4-year-old pupil with autism. Every claim in the text is cited to a specific
-              observation. The draft is marked "review before use" throughout — SENSay provides the
-              first draft, the SENCO provides the judgement.
+              Below is an excerpt from an EHCP Section B draft SENSay generated for an illustrative
+              pupil. Every claim in the text is cited to a specific observation. The draft is marked
+              "review before use" throughout: SENSay provides the first draft, the SENCO provides
+              the judgement.
             </p>
           </div>
 
@@ -110,7 +109,7 @@ export default function Senco() {
           <p className="senco-seeit__note">
             Every "[14 items]" label links to the evidence appendix. The "Not enough evidence yet"
             card appears automatically when SENSay lacks the minimum observations to draft
-            confidently — it will never pad a section with speculation.
+            confidently, rather than padding a section with speculation.
           </p>
         </div>
       </section>
@@ -119,8 +118,8 @@ export default function Senco() {
       <section className="section section--white">
         <div className="section-inner">
           <div className="section-header">
-            <div className="section-tag">Pilot programme</div>
-            <h2>Pilot SENSay across Summer Term 2026</h2>
+            <div className="section-tag">Founding schools</div>
+            <h2>We are taking on a small group of founding schools for 2026-27</h2>
           </div>
 
           <div className="pilot-grid">
@@ -128,30 +127,29 @@ export default function Senco() {
               <h3 className="pilot-col__title">Who this is for</h3>
               <ul className="pilot-col__list">
                 <li>
-                  West Yorkshire special schools (Bradford, Leeds, Kirklees, Wakefield, Calderdale)
-                  — our early-adoption focus
+                  Special schools in West Yorkshire (Bradford, Leeds, Kirklees, Wakefield,
+                  Calderdale) are our early focus
                 </li>
-                <li>SENCOs and SEN leads with 3–5 pupils approaching EHCP review this summer</li>
-                <li>Schools willing to give us four half-hour feedback conversations across the term</li>
+                <li>SENCOs and SEN leads with 3 to 5 pupils approaching an EHCP annual review this school year</li>
+                <li>Schools willing to give us regular feedback conversations across the year</li>
               </ul>
             </div>
             <div className="pilot-col pilot-col--accent">
-              <h3 className="pilot-col__title">What pilot schools get</h3>
+              <h3 className="pilot-col__title">What founding schools get</h3>
               <ul className="pilot-col__list">
-                <li>The tool, training, and technical support at no cost during pilot</li>
-                <li>EHCP drafting for your named pilot pupils</li>
+                <li>The first five schools get their first term free, then the standard licence</li>
                 <li>
-                  Direct line to the founders — we're parents of a non-verbal child, and product
-                  changes based on SENCO feedback move fast
+                  A direct line into the product team. We are the parents of a non-verbal child,
+                  and changes based on SENCO feedback move fast
                 </li>
-                <li>Founding partner pricing if you choose to continue beyond the pilot</li>
+                <li>A say in what we build next</li>
               </ul>
             </div>
           </div>
 
           <div className="pilot-cta">
             <a href={PILOT_MAILTO} className="btn btn--primary">
-              Apply to pilot
+              Become a founding school
             </a>
           </div>
         </div>
@@ -190,9 +188,8 @@ export default function Senco() {
       <section className="section section--white">
         <div className="section-inner">
           <div className="founder-note">
-            <div className="founder-note__photo" aria-label="Founder photo placeholder">
-              {/* Placeholder — real founder photo to follow */}
-              <span>ND</span>
+            <div className="founder-note__photo" role="img" aria-label="Neil Dickinson">
+              <span aria-hidden="true">ND</span>
             </div>
             <div className="founder-note__body">
               <blockquote className="founder-note__quote">
@@ -202,11 +199,9 @@ export default function Senco() {
                 first SENCOs in the country to try it, we'd value a 15-minute call.
               </blockquote>
               <div className="founder-note__sig">
-                <div className="founder-note__name">— Neil Dickinson, co-founder, SENSay</div>
+                <div className="founder-note__name">Neil Dickinson, co-founder and CTO, SENSay</div>
                 <div className="founder-note__contact">
                   <a href="mailto:hello@sensay.uk">hello@sensay.uk</a>
-                  <br />
-                  Greenfield House, Halifax Road, Liversedge, WF15 8HL
                 </div>
               </div>
             </div>
@@ -214,7 +209,7 @@ export default function Senco() {
 
           <div className="senco-bottom-cta">
             <a href={PILOT_MAILTO} className="btn btn--primary">
-              Apply to pilot
+              Become a founding school
             </a>
             <Link to="/contact" className="btn btn--outline">
               Contact us

@@ -31,8 +31,6 @@ export default function Nav() {
             <Link to="/#how-it-works">How it works</Link>
           )}
           <Link to="/about"      onClick={() => setMenuOpen(false)}>About</Link>
-          {/* Placed between About and Our story per brief. If "For schools" crowds the nav at
-              ~1040px, fall back to "Schools" as the label or promote to a dropdown. */}
           <Link to="/senco"      onClick={() => setMenuOpen(false)}>For schools</Link>
           <Link to="/our-story"  onClick={() => setMenuOpen(false)}>Our story</Link>
           <Link to="/documentation" onClick={() => setMenuOpen(false)}>Resources</Link>
@@ -41,7 +39,7 @@ export default function Nav() {
           ) : (
             <Link to="/#pricing">Pricing</Link>
           )}
-          <a href="mailto:hello@sensay.uk?subject=Pilot%20interest" className="nav-cta">Book pilot</a>
+          <a href="mailto:hello@sensay.uk?subject=Founding%20school%20interest" className="nav-cta">Founding schools</a>
         </nav>
 
         <button

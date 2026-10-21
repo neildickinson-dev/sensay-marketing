@@ -1,56 +1,66 @@
 import React from 'react'
 import './Pricing.css'
 
+export const FOUNDING_SCHOOL_MAILTO =
+  'mailto:hello@sensay.uk?subject=Founding%20school%20interest'
+export const FAMILY_INTEREST_MAILTO =
+  'mailto:hello@sensay.uk?subject=Family%20plan%20interest'
+const CLINICIAN_MAILTO = 'mailto:hello@sensay.uk?subject=Clinician%20plan'
+
+// School licence bands. Annual, invoiced annually in advance, prices exclude VAT.
+export const SCHOOL_BANDS = [
+  { name: 'Starter',        price: '£895',   pupils: 'Up to 5 pupils' },
+  { name: 'Standard',       price: '£1,495', pupils: 'Up to 15 pupils' },
+  { name: 'Large',          price: '£2,295', pupils: 'Up to 30 pupils' },
+  { name: 'Special school', price: '£4,495', pupils: 'Up to 80 pupils, then £45 per extra pupil' },
+]
+
 const PLANS = [
   {
-    name: 'Parent',
+    name: 'Families',
     color: '#00AEEF',
-    price: '£9.99',
-    period: 'per month · 1 child profile',
+    price: '£7.99',
+    period: 'a month, or £79 a year, including VAT. 14-day free trial.',
+    availability: 'Available January 2027 on iPhone, iPad and Android',
     features: [
-      'Configurable communication board',
-      'Mulberry symbol library (5,500+ symbols)',
-      'Custom photo & video symbols',
-      'Daily activity timeline',
-      'AI weekly insight reports',
-      'Home–school data sharing',
+      'AI pattern insights',
+      'Weekly reports',
+      'Sharing with school and other adults',
+      'Caveats on likely play or repeat taps in reports',
     ],
-    cta: 'Start free trial',
-    href: 'https://app.sensay.uk',
+    cta: 'Register interest',
+    href: FAMILY_INTEREST_MAILTO,
     featured: false,
   },
   {
-    name: 'Education',
+    name: 'Schools',
     color: '#00A651',
-    price: '£399',
-    period: 'per year · whole classroom',
+    price: 'From £895',
+    period: 'a year + VAT, per school. Annual licence, invoiced annually in advance.',
     features: [
-      'Everything in Parent plan',
-      'Classroom dashboard (SENCO access)',
-      'Multi-child management',
-      'EHCP evidence export',
-      'AI trigger & pattern analysis',
-      'Priority support',
+      'A communication board for every pupil',
+      'Teacher observations logged during normal AAC activities',
+      'EHCP Section B drafts, with every claim cited to its source',
+      'School dashboard for SENCOs',
+      'Home and school sharing, with family consent',
+      'Long-term communication trends',
     ],
-    cta: 'Get classroom licence',
-    href: 'mailto:hello@sensay.uk',
+    cta: 'Become a founding school',
+    href: FOUNDING_SCHOOL_MAILTO,
     featured: true,
   },
   {
-    name: 'Health',
+    name: 'Clinicians',
     color: '#ED1C24',
-    price: '£799',
-    period: 'per year · specialist licence',
+    price: '£249',
+    period: "a year + VAT, for an individual clinician's caseload (caseload limits apply).",
     features: [
-      'Everything in Education plan',
-      'Clinical longitudinal reports',
-      'Development trajectory tracking',
-      'False-positive flagging engine',
-      'API / EHR integration',
-      'Dedicated account manager',
+      'Communication trends across home and school, shared by families with their consent',
+      'Summaries to share ahead of appointments',
+      'Caveats on likely play or repeat taps in reports',
     ],
     cta: 'Contact us',
-    href: 'mailto:hello@sensay.uk',
+    href: CLINICIAN_MAILTO,
     featured: false,
   },
 ]
@@ -60,9 +70,14 @@ export default function Pricing() {
     <section className="section section--light" id="pricing">
       <div className="section-inner">
         <div className="section-header">
-          <div className="section-tag">Simple pricing</div>
-          <h2>Plans for every environment</h2>
-          <p>Start free. Scale as your needs grow. Every plan includes the core communication board and AI analytics.</p>
+          <div className="section-tag">Pricing</div>
+          <h2>Plans for home, school and clinic</h2>
+          <p>
+            A child's ability to communicate (the board, the voice, sending a message) is never
+            locked behind payment, and if the AI is ever unavailable the board still sends the
+            message as it was tapped. The family plan adds the adult side: AI pattern insights, weekly
+            reports, and sharing with school and other adults.
+          </p>
         </div>
 
         <div className="pricing-grid">
@@ -72,12 +87,17 @@ export default function Pricing() {
               className={`pricing-card${plan.featured ? ' pricing-card--featured' : ''}`}
               style={plan.featured ? { borderColor: plan.color } : {}}
             >
-              {plan.featured && (
-                <div className="pricing-badge" style={{background: plan.color}}>Most popular</div>
-              )}
-              <div className="pricing-tier" style={{color: plan.color}}>{plan.name} plan</div>
+              <div className="pricing-tier" style={{color: plan.color}}>{plan.name}</div>
               <div className="pricing-price">{plan.price}</div>
-              <div className="pricing-period">{plan.period}</div>
+              <div className="pricing-period">
+                {plan.period}
+                {plan.availability && (
+                  <>
+                    <br />
+                    <strong>{plan.availability}</strong>
+                  </>
+                )}
+              </div>
               <ul className="pricing-features">
                 {plan.features.map(f => (
                   <li key={f}>
@@ -97,10 +117,40 @@ export default function Pricing() {
           ))}
         </div>
 
-        <p className="pricing-note">
-          All plans include a free 30-day trial. No setup fee. Cancel anytime.<br />
-          Pilots available for Q3 2026 — <a href="mailto:hello@sensay.uk">get in touch</a> to register your interest.
-        </p>
+        <div className="pricing-bands">
+          <h3 className="pricing-bands__title">School licences</h3>
+          <table className="pricing-bands__table">
+            <thead>
+              <tr>
+                <th scope="col">Licence</th>
+                <th scope="col">Pupils</th>
+                <th scope="col">Price a year (+ VAT)</th>
+              </tr>
+            </thead>
+            <tbody>
+              {SCHOOL_BANDS.map(b => (
+                <tr key={b.name}>
+                  <th scope="row">{b.name}</th>
+                  <td>{b.pupils}</td>
+                  <td>{b.price}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <p className="pricing-bands__note">
+            Maintained schools, academies and most independent and non-maintained special schools
+            can reclaim the VAT.
+          </p>
+        </div>
+
+        <div className="pricing-note">
+          <p>
+            We are taking on a small group of founding schools for 2026-27.{' '}
+            The first five get their first term free, then move to the standard licence. Every
+            founding school gets a direct line into the product team.{' '}
+            <a href={FOUNDING_SCHOOL_MAILTO}>Email hello@sensay.uk</a> to register your interest.
+          </p>
+        </div>
       </div>
     </section>
   )

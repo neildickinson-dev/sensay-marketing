@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sensay.uk/sitemap.xml

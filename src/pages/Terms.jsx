@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './pages.css'
 
 export default function Terms() {
@@ -9,62 +10,63 @@ export default function Terms() {
         <div className="page-hero-inner">
           <div className="page-hero__tag">Legal</div>
           <h1>Terms of Service</h1>
-          <p>Last updated: April 2026. Please read these terms before using SENSay.</p>
+          {/* Solicitor review recommended before paid plans go live. */}
+          <p>Last updated: 16 October 2026. Please read these terms before using SENSay.</p>
         </div>
       </div>
 
       <div className="page-body prose">
 
-        <div className="placeholder-block">
-          <div className="placeholder-block__label">Legal review needed before going live</div>
-          <p>Full terms of service should be drafted and reviewed by a qualified solicitor. The sections below are placeholders outlining the key areas to be covered.</p>
-        </div>
-
-        <h2 style={{marginTop:'2rem'}}>1. Acceptance of terms</h2>
+        {/* Internal note: these terms still need review by a qualified solicitor before launch. */}
+        <h2 style={{marginTop:0}}>1. Acceptance of terms</h2>
         <p>
-          By creating an account or using the SENSay platform, you agree to these Terms of Service
+          By creating an account or using SENSay, you agree to these Terms of Service
           and our Privacy Policy. If you are setting up an account on behalf of a school or healthcare
           organisation, you confirm you have authority to bind that organisation.
         </p>
 
         <h2>2. The service</h2>
         <p>
-          SENSay provides a configurable communication platform for non-verbal and speech-impaired
-          children, together with AI-powered analytics tools for parents, educators and healthcare
-          professionals. The service is provided on a subscription basis across three tiers: Parent,
-          Education and Health.
+          SENSay provides a communication app for pre-verbal and non-verbal children, together with
+          AI pattern reports for parents, educators and healthcare professionals. Paid plans are: the
+          Family plan (monthly or annual), the School licence (annual) and the Clinician licence
+          (annual). A child's ability to communicate (the board, the voice and sending a message) is
+          never locked behind payment.
         </p>
 
         <h2>3. Subscriptions and payment</h2>
         <ul>
-          <li>Subscriptions are billed monthly (Parent) or annually (Education, Health)</li>
-          <li>A free 30-day trial is available for all plans — no payment required to start</li>
-          <li>You may cancel at any time — cancellation takes effect at the end of the billing period</li>
-          <li>Refunds are considered on a case-by-case basis — contact hello@sensay.uk</li>
-          <li>Payments are processed by Stripe — SENSay does not store payment card details</li>
+          <li>The Family plan is billed monthly or annually. School and Clinician licences are invoiced annually in advance</li>
+          <li>The Family plan includes a 14-day free trial</li>
+          <li>School and Clinician prices are shown excluding VAT. Family plan prices include VAT</li>
+          <li>You may cancel at any time. Cancellation takes effect at the end of the billing period</li>
+          <li>Refunds are considered on a case-by-case basis. Contact hello@sensay.uk</li>
+          <li>School and Clinician licences are invoiced and paid by bank transfer</li>
+          <li>Family plan subscriptions bought in the app are billed by Apple (App Store) or Google (Google Play) under their terms, and are managed or cancelled in your App Store or Google Play account</li>
+          <li>SENSay never sees or stores payment card details</li>
         </ul>
 
         <h2>4. Acceptable use</h2>
         <p>You agree not to:</p>
         <ul>
-          <li>Use the platform for any purpose other than supporting the communication of a named child</li>
+          <li>Use SENSay for any purpose other than supporting the communication of a named child</li>
           <li>Share account credentials with unauthorised parties</li>
-          <li>Attempt to reverse engineer, copy or redistribute any part of the platform</li>
+          <li>Attempt to reverse engineer, copy or redistribute any part of the service</li>
           <li>Upload content that is unlawful, harmful or inappropriate</li>
-          <li>Use the platform in a way that could harm a child's wellbeing</li>
+          <li>Use the service in a way that could harm a child's wellbeing</li>
         </ul>
 
         <h2>5. Data and privacy</h2>
         <p>
           Your use of data within SENSay is governed by our{' '}
-          <a href="/privacy">Privacy Policy</a>, which forms part of these terms.
+          <Link to="/privacy">Privacy Policy</Link>, which forms part of these terms.
           You are responsible for ensuring that any data you enter about a child has been collected
           lawfully and that appropriate consents are in place.
         </p>
 
         <h2>6. AI-generated insights</h2>
         <p>
-          The AI analytics features of SENSay are designed to assist — not replace — professional
+          The AI analytics features of SENSay are designed to assist, not replace, professional
           judgement. AI-generated insights should be considered alongside other information and
           professional assessment. SENSay accepts no liability for decisions made solely on the basis
           of AI-generated reports.
@@ -72,7 +74,7 @@ export default function Terms() {
 
         <h2>7. Intellectual property</h2>
         <p>
-          The SENSay platform, brand and underlying technology are the intellectual property of
+          The SENSay app, brand and underlying technology are the intellectual property of
           SENSay Ltd. Communication board configurations, custom symbols and data you create remain
           your property and can be exported at any time.
         </p>
@@ -80,7 +82,7 @@ export default function Terms() {
         <h2>8. Limitation of liability</h2>
         <p>
           SENSay is provided in good faith as a communication and analytics tool. We do not accept
-          liability for any clinical decisions made on the basis of platform data. The platform is
+          liability for any clinical decisions made on the basis of data in the app. The service is
           not a medical device and should not be used as a substitute for professional healthcare advice.
         </p>
 

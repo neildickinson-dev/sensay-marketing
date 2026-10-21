@@ -43,22 +43,13 @@ git push -u origin main
 4. Add: Type=`CNAME`, Name=`www`, Value=`cname.vercel-dns.com`
 5. Save — live within 15–60 minutes
 
-## Update email links
+## Email
 
-Before going live, find and replace placeholder emails:
-- `hello@sensay.uk` — general enquiries  
-- `schools@sensay.uk` — school/SENCO outreach
-- `health@sensay.uk` — healthcare enquiries
-- `neil@sensay.uk` — founder contact
-
-Set these up as forwards in 123-reg → Email → Email Forwarding.
+Every contact link on the site uses `hello@sensay.uk`. There is no form backend: the contact form opens the visitor's email app with the message pre-filled.
 
 ## App subdomain
 
-The "Get started" button links to `https://app.sensay.uk`.
-Point this at your Expo web deployment:
-- In Vercel, add your Expo project and assign `app.sensay.uk` as its domain
-- Add CNAME: Name=`app`, Value=`cname.vercel-dns.com` in 123-reg
+The marketing site does not link into `app.sensay.uk` before launch. Family plan and founding school calls to action are mailto links to `hello@sensay.uk`.
 
 ## Structure
 

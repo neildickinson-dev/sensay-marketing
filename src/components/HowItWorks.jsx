@@ -2,40 +2,38 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './HowItWorks.css'
 
-/* Brief drops the feature bullet lists in each tab — kept as empty arrays so the existing
-   .hiw-features rendering simply produces nothing. If Neil wants bullets back, repopulate. */
 const TABS = [
   {
     id: 'child',
-    label: '🌟 The child',
+    icon: '🌟', label: 'The child',
     color: 'blue',
     heading: 'Their voice, their way',
-    body: 'The child taps tiles to communicate feelings, needs, and requests. Tiles use photos, videos, or voice recordings personal to them — not generic symbols. The tree grows as the child develops, from 4 tiles at starting, to 40+ as communication expands.',
+    body: 'The child taps tiles to communicate feelings, needs and requests. Tiles can use photos or videos that are personal to them, as well as Mulberry and other openly licensed symbol sets, via Global Symbols. The board grows as the child develops, from 4 tiles at the start to 40 or more as communication expands.',
     features: [],
   },
   {
     id: 'parent',
-    label: '❤️ Parents',
+    icon: '❤️', label: 'Parents',
     color: 'green',
     heading: 'Understand what your child is telling you',
-    body: "See patterns you'd never catch in the moment. When does your child seek \"quiet time\"? What triggers distress? Which communications appear only at school and not at home? SENSay surfaces the signal in the data — with clear summary documents you can share with your child's school or therapist.",
+    body: "See patterns you'd never catch in the moment. When does your child seek \"quiet time\"? What triggers distress? Which communications appear only at school and not at home? SENSay surfaces the signal in the data, with clear summaries you can share with your child's school or therapist.",
     features: [],
   },
   {
     id: 'school',
-    label: '🏫 Schools',
+    icon: '🏫', label: 'Schools',
     color: 'red',
     heading: 'From observation to EHCP draft',
-    body: 'Teachers log simple classroom observations during normal AAC activities. At EHCP review time, SENSay drafts Section B text grouped by area of need, with every claim cited to the source observation. SENCOs audit before signing. The tool hedges its language when evidence is thin and speaks confidently when evidence is consistent — it never overclaims what was seen.',
+    body: 'Teachers log simple classroom observations during normal AAC activities. At EHCP review time, SENSay drafts Section B text grouped by area of need, with every claim cited to the source observation. SENCOs audit before signing. The tool hedges its language when evidence is thin and speaks confidently when evidence is consistent, so it does not overclaim what was seen.',
     features: [],
     link: { to: '/senco', label: 'See the SENCO feature →' },
   },
   {
     id: 'health',
-    label: '⚕️ Clinical',
+    icon: '⚕️', label: 'Clinical',
     color: 'yellow',
     heading: 'Longitudinal evidence, not session snapshots',
-    body: "Speech therapists, paediatricians, and specialist nurses see a child's communication trajectory across months, not minutes. Cross-context analytics reveal how communication shifts between 1:1 and group, morning and afternoon, familiar and unfamiliar adults. Auto-generated quarterly summaries align to clinical reporting frameworks.",
+    body: "Speech therapists, paediatricians and specialist nurses can see how a child's communication changes across months, not minutes, when the family chooses to share. Reports show how communication shifts between 1:1 and group, morning and afternoon, familiar and unfamiliar adults. Summaries can be shared with therapists and clinicians ahead of appointments.",
     features: [],
   },
 ]
@@ -58,7 +56,7 @@ export default function HowItWorks() {
         <div className="section-header">
           <div className="section-tag">Who is SENSay for?</div>
           <h2>One child. Three views. Shared insight.</h2>
-          <p>SENSay is designed for the ecosystem around the child — parent, school, and healthcare professional — each seeing the insight relevant to their role, with consent managed by the family.</p>
+          <p>SENSay is designed for the people around the child (parent, school and healthcare professional), each seeing the insight relevant to their role, with consent managed by the family.</p>
         </div>
 
         <div className="hiw-tabs">
@@ -69,14 +67,14 @@ export default function HowItWorks() {
               style={active === t.id ? { background: COLOR_MAP[t.color].bg, color: COLOR_MAP[t.color].dot, borderColor: COLOR_MAP[t.color].dot } : {}}
               onClick={() => setActive(t.id)}
             >
-              {t.label}
+              <span aria-hidden="true">{t.icon}</span> {t.label}
             </button>
           ))}
         </div>
 
         <div className="hiw-panel">
           <div className="hiw-visual" style={{ background: c.bg }}>
-            <div className="hiw-visual__icon">
+            <div className="hiw-visual__icon" aria-hidden="true">
               {active === 'child'  && <span style={{fontSize:72}}>👶</span>}
               {active === 'parent' && <span style={{fontSize:72}}>👨‍👩‍👦</span>}
               {active === 'school' && <span style={{fontSize:72}}>📚</span>}
