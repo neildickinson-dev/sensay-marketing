@@ -139,7 +139,7 @@ export default function Home() {
           <Split
             flip
             eyebrow="AAC services"
-            title="Already on TD Snap or Grid 3? SENSay Connect sees it all."
+            title="Already on TD Snap or Grid 3? SENSay Connect brings it together."
             lead="SENSay Connect reads the usage data children's devices already record, keeps it, and shows a whole caseload over months: who has stopped, whose use is dropping, whose vocabulary is growing."
             actions={<Link className="s-btn s-btn--navy" to="/connect">SENSay Connect</Link>}
           >

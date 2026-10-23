@@ -52,7 +52,7 @@ export default function Therapists() {
               <tr><td>Access</td><td>A parent shares a child with your email and chooses everything, or plans and progress only. They can change it or stop at any time.</td></tr>
               <tr><td>Caseload</td><td>Up to 40 children for £249 a year plus VAT. Ask us about larger caseloads.</td></tr>
               <tr><td>Clinical judgement</td><td>SENSay shows what the child communicated. It does not diagnose, assess or recommend a device; status flags are prompts for your judgement.</td></tr>
-              <tr><td>Data</td><td>Held in the EU, encrypted, never sold and never used to train AI.</td></tr>
+              <tr><td>Data</td><td>Stored in the EU, encrypted, never sold and never used to train AI.</td></tr>
               <tr><td>NHS assurance</td><td>Data Security and Protection Toolkit, Digital Technology Assessment Criteria and a DCB0129 clinical safety case in progress.</td></tr>
             </tbody>
           </table>

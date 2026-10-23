@@ -88,7 +88,7 @@ export function Promises() {
           </div>
           <div className="s-promise">
             <h3>Children's data is protected</h3>
-            <p>Held in the EU, encrypted, never sold and never used to train AI. Families decide who sees it, and can delete it at any time.</p>
+            <p>Stored in the EU, encrypted, never sold and never used to train AI. Families decide who sees it, and can delete it at any time.</p>
           </div>
         </div>
       </div>

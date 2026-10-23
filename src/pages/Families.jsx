@@ -4,7 +4,7 @@ import { Browser, Closing, Promises, Shot, Split, Tablet } from '../components/B
 
 const FAQ = [
   ['Does my child need a special device?', 'No. SENSay runs on an iPad, an Android tablet, a phone or a computer, in the browser at app.sensay.uk. Apps for the App Store and Google Play follow in 2027.'],
-  ['My child already uses another AAC app. Do we have to switch?', 'No. If your child uses TD Snap, Grid 3, TouchChat, LAMP Words for Life, CoughDrop or Speak for Yourself, SENSay Connect can read the usage that app already records, so you still get the patterns without changing anything your child does.'],
+  ['My child already uses another AAC app. Do we have to switch?', 'No. If your child uses TD Snap, Grid 3, TouchChat, LAMP Words for Life, CoughDrop or Speak for Yourself, SENSay Connect can read the usage that app already records. Connect is available now through schools and AAC services, and for families from 2027; nothing your child does has to change.'],
   ['What if my child just likes tapping?', 'That is part of learning a board. SENSay counts a burst of the same message once, you can mark a message as play, and repeats do not flood your phone. The patterns stay honest.'],
   ['Is AI making decisions about my child?', 'No. AI can suggest what a message might mean, always labelled as a suggestion and never shown to your child. You can switch it off in Board settings, and the board works exactly the same.'],
   ['Who can see my child\'s messages?', 'You, and only the school staff and therapists you link or share with. You can stop sharing at any time. Data is held in the EU, encrypted, never sold and never used to train AI.'],

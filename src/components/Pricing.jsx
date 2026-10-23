@@ -82,7 +82,7 @@ export default function Pricing() {
           <p className="s-caption">
             Multi-academy trusts save 5% at two or three schools, 10% at four to nine and 15% at ten or more.
             Pupils on other devices: SENSay Connect is included in Large and Special school licences, and £395 a year otherwise.
-            Maintained schools, academies and most independent special schools reclaim the VAT.
+            Maintained schools and academies can usually reclaim the VAT.
           </p>
         </div>
       </div>

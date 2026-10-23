@@ -17,7 +17,7 @@ export default function Connect() {
         <div className="s-wrap s-hero__grid">
           <div>
             <span className="s-eyebrow">SENSay Connect, for AAC services</span>
-            <h1 className="s-h1">Your whole caseload, on every device, over months</h1>
+            <h1 className="s-h1">Your whole caseload, across devices, over months</h1>
             <p className="s-lead">
               Children's devices already record how they are used. Connect keeps that data, compares it over time and
               tells your team who needs you this week. No new device, and nothing for the child to learn.
@@ -94,7 +94,7 @@ export default function Connect() {
               <tr><td>What we ask</td><td>One named contact, monthly uploads, and two 30-minute feedback calls in weeks 6 and 12.</td></tr>
               <tr><td>What you get</td><td>Full use of Connect, help setting it up, and the service summary at the end for your managers or commissioners.</td></tr>
               <tr><td>At the end</td><td>Continue on a price agreed with you before the trial ends, or stop and we delete everything within 30 days.</td></tr>
-              <tr><td>Data</td><td>Held in the EU, encrypted, never sold and never used to train AI. Your team uses its own references; no child's name is needed.</td></tr>
+              <tr><td>Data</td><td>Stored in the EU, encrypted, never sold and never used to train AI. Your team uses its own references; no child's name is needed.</td></tr>
             </tbody>
           </table>
         </div>
