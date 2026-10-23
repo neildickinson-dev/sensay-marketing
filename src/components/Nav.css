@@ -19,20 +19,15 @@
   justify-content: space-between;
 }
 
-.nav-logo {
-  font-family: var(--font-display);
-  font-size: 26px;
-  font-weight: 900;
-  letter-spacing: -1px;
-  line-height: 1;
-}
-.nav-logo__sen { color: var(--blue); }
-.nav-logo__say { color: var(--yellow); }
+.nav-logo { display: flex; align-items: center; }
+.nav-logo img { height: 38px; width: auto; }
+.nav-links a.is-active { color: var(--navy, #0A1F3D); }
+.nav-signin { font-weight: 800 !important; color: #0077A8 !important; }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.4rem;
 }
 .nav-links a {
   font-size: 14px;
