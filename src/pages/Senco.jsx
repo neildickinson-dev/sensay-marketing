@@ -33,7 +33,7 @@ const FAQS = [
   },
   {
     q: "Is it compliant with the UK Children's Code and UK GDPR?",
-    a: "SENSay is built to UK GDPR and the ICO Children's Code. The family controls consent, and child profiles use a first name or alias only. Our data processors are Supabase (database, in the EU), Fasthosts (hosting, in the UK), Anthropic (AI analysis, in the US) and Resend and Twilio (email and text notifications, in the US). Founding schools receive a data processing agreement and a data protection impact assessment template before any pupil data is entered.",
+    a: "SENSay is built to UK GDPR and the ICO Children's Code. The family controls consent, and child profiles use a first name or alias only. Our data processors are Supabase (database, in the EU), Vercel (hosting), Anthropic (AI analysis, in the US) and Resend and Twilio (email and text notifications, in the US). Founding schools receive a data processing agreement and a data protection impact assessment template before any pupil data is entered.",
   },
   {
     q: 'Who built this?',
