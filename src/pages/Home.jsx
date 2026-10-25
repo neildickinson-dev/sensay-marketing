@@ -155,7 +155,7 @@ export default function Home() {
           <span className="s-eyebrow s-eyebrow--red">Why we built it</span>
           <h2 className="s-h2">Built by the parents of a non-verbal child</h2>
           <p className="s-lead">
-            Our son William is ten, autistic, and has never spoken. He tells us things all day long. For years we kept
+            Our son William is eleven, autistic, and has never spoken. He tells us things all day long. For years we kept
             missing them, and by the next school meeting the moment had gone. SENSay is the tool we wish we had had.
           </p>
           <div className="s-actions" style={{ justifyContent: 'center' }}>

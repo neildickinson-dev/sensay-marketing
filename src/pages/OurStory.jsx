@@ -10,7 +10,7 @@ export default function OurStory() {
         <div className="page-hero-inner">
           <div className="page-hero__tag">Our story</div>
           <h1>Learning to listen with our eyes</h1>
-          <p>SENSay didn't start in a boardroom. It started at home, with William, our amazing, non-verbal ten-year-old, and a question every SEN parent knows: how do I truly understand what my child is telling me?</p>
+          <p>SENSay didn't start in a boardroom. It started at home, with William, our amazing, non-verbal eleven-year-old, and a question every SEN parent knows: how do I truly understand what my child is telling me?</p>
         </div>
       </div>
 
@@ -42,7 +42,7 @@ export default function OurStory() {
         </p>
 
         <p>
-          William is 10 years old. He has never been verbal. He is on the autistic spectrum and has
+          William is 11 years old. He has never been verbal. He is on the autistic spectrum and has
           compound learning difficulties, and he has one of the most distinctive, powerful personalities
           of anyone we know. He communicates constantly. Just not with words.
         </p>
@@ -269,7 +269,7 @@ export default function OurStory() {
               Co-founder and CTO · Parent of William · Commercial and technical engineer
             </div>
             <p style={{fontSize:14, color:'var(--mid)', lineHeight:1.75, margin:0}}>
-              Neil is the father of William, a 10-year-old non-verbal child with autism and compound
+              Neil is the father of William, an 11-year-old non-verbal child with autism and compound
               learning difficulties. He co-founded SENSay with Kirsty and leads engineering. With a
               background in commercial engineering and project delivery, Neil brings the technical
               grounding to build a tool that genuinely serves the SEN community.
