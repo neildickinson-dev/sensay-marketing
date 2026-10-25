@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import BoardTile from './BoardTile.jsx'
 import StrokeSymbol from './StrokeSymbol.jsx'
-import { CORE_WORDS, QUICK_WORDS, FOLDERS, SECTIONS, LEVELS, WORD_TYPES } from '../data/board.js'
+import { CORE_WORDS, CORE_GRID, QUICK_WORDS, SECTIONS, LEVELS, WORD_TYPES } from '../data/board.js'
 import './BoardMap.css'
 
 const QUICK_TALK = [
@@ -41,15 +41,19 @@ const KEYS = ['qwertyuiop', 'asdfghjkl', 'zxcvbnm']
 
 function SectionView({ section, level }) {
   if (section === 'core') {
-    const shown = LEVELS.find(l => l.key === level)
+    // Which words show at each level follows the app's priority order; words
+    // beyond the level leave an empty cell, so nothing else moves.
+    const rank = new Map(CORE_WORDS.map((c, i) => [c.word.toLowerCase(), i]))
+    const visible = (c) => {
+      if (c.folder || level === 'full') return true
+      const r = rank.get(c.word.toLowerCase())
+      return r !== undefined && r < (level === 'first' ? 16 : 32)
+    }
     return (
       <div className="bmap-grid bmap-grid--8">
-        {CORE_WORDS.slice(0, 24).map((c, i) => (
-          i < Math.min(shown.words, 24)
-            ? <BoardTile key={c.word} word={c.word} type={c.type} symbol={c.symbol} size="sm" />
-            : <BoardTile key={c.word} empty size="sm" />
-        ))}
-        {FOLDERS.map(f => <BoardTile key={f.word} word={f.word} type="things" symbol={f.symbol} folder size="sm" />)}
+        {CORE_GRID.map(c => (visible(c)
+          ? <BoardTile key={c.word} word={c.word} type={c.type} symbol={c.symbol} picture={c.picture} folder={c.folder} size="sm" />
+          : <BoardTile key={c.word} empty size="sm" />))}
       </div>
     )
   }

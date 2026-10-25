@@ -25,6 +25,23 @@ export const CORE_WORDS = [
   w('out', 'describing', 'out'), w('up', 'describing', 'up'), w('down', 'describing', 'down'), w('what', 'describing', 'what'),
 ]
 
+// The core-words page exactly as the app draws it (8 columns by 6 rows, by
+// word type: people, actions, describing words, little words), from the
+// app screenshot public/img/board-tablet.jpg. Each column top to bottom.
+const cell = (word, type, opts = {}) => ({ word, type, ...opts })
+const COLUMNS = [
+  [cell('I', 'people', { symbol: 'i' }), cell('you', 'people', { symbol: 'you' }), cell('it', 'people', { symbol: 'it' }), cell('my', 'people', { symbol: 'my' }), cell('all done', 'social', { symbol: 'all_done' }), cell('People', 'people', { picture: 'w-family.svg', folder: true })],
+  [cell('want', 'actions', { symbol: 'want' }), cell('like', 'actions', { symbol: 'like' }), cell('need', 'actions', { symbol: 'need' }), cell('feel', 'actions', { symbol: 'feel' }), cell('have', 'actions'), cell('can', 'actions')],
+  [cell('go', 'actions', { picture: 'w-go.svg' }), cell('come', 'actions', { picture: 'w-come.svg' }), cell('get', 'actions', { picture: 'w-get.svg' }), cell('give', 'actions', { picture: 'w-give.svg' }), cell('put', 'actions', { picture: 'w-put.svg' }), cell('make', 'actions', { picture: 'w-make.svg' })],
+  [cell('Vimto', 'actions', { picture: 'w-vimto.svg' }), cell('play', 'actions', { picture: 'w-play.svg' }), cell('eat', 'actions', { picture: 'w-eat.svg' }), cell('drink', 'actions', { picture: 'w-drink.svg' }), cell('open', 'actions', { picture: 'w-open.svg' }), cell('Actions', 'actions', { symbol: 'game', folder: true })],
+  [cell('help', 'actions', { picture: 'w-help.svg' }), cell('do', 'actions'), cell('up', 'describing', { symbol: 'up' }), cell('down', 'describing', { symbol: 'down' }), cell('stop', 'no', { symbol: 'stop' }), cell('not', 'no', { symbol: 'not' })],
+  [cell('more', 'describing', { symbol: 'more' }), cell('again', 'describing', { symbol: 'again' }), cell('big', 'describing', { picture: 'w-big.svg' }), cell('good', 'describing', { picture: 'w-good.svg' }), cell('different', 'describing'), cell('Describing', 'describing', { symbol: 'big', folder: true })],
+  [cell('what', 'describing', { symbol: 'what' }), cell('where', 'describing', { picture: 'w-where.svg' }), cell('who', 'describing', { picture: 'w-who.svg' }), cell('in', 'describing', { picture: 'w-in.svg' }), cell('on', 'describing', { picture: 'w-on.svg' }), cell('Questions', 'describing', { symbol: 'what', folder: true })],
+  [cell('that', 'things', { symbol: 'that' }), cell('this', 'things'), cell('and', 'things'), cell('the', 'things'), cell('a', 'things'), cell('Little words', 'things', { symbol: 'folder', folder: true })],
+]
+// Row by row, for a CSS grid.
+export const CORE_GRID = Array.from({ length: 6 }, (_, r) => COLUMNS.map(col => col[r])).flat()
+
 // Always on screen, always in this order, always red.
 export const QUICK_WORDS = ['yes', 'no', 'stop', 'help', 'pain', 'toilet']
 

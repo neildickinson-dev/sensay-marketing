@@ -131,7 +131,8 @@
 }
 .message-btn:disabled, .message-send:disabled { opacity: 0.4; cursor: default; }
 
-.board-grid { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 7px; }
+.board-grid { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 6px; }
+.board-grid .btile { aspect-ratio: 1 / 0.86; }
 
 .brief {
   background: var(--card);
@@ -158,8 +159,7 @@
 }
 @media (max-width: 640px) {
   .hero { padding-top: 6.5rem; }
-  .board-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .hide-narrow { display: none; }
+  .board-grid { gap: 4px; }
   .quick-strip { grid-template-columns: repeat(3, 1fr); }
   .device-body { padding: 10px; }
 }

@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import BoardTile from './BoardTile.jsx'
 import StrokeSymbol from './StrokeSymbol.jsx'
-import { CORE_WORDS, QUICK_WORDS, FOLDERS } from '../data/board.js'
-import { FOUNDING_SCHOOL_MAILTO } from './Pricing.jsx'
+import { CORE_GRID, QUICK_WORDS } from '../data/board.js'
 import './Hero.css'
 
 const URGENT = new Set(['stop', 'help', 'pain', 'toilet'])
@@ -77,8 +76,8 @@ export default function Hero() {
             school and therapy, built by the parents of a non-verbal child.
           </p>
           <div className="hero-btns">
-            <a href={FOUNDING_SCHOOL_MAILTO} className="btn btn--primary">Become a founding school →</a>
-            <a href="#board" className="btn btn--outline">See the board</a>
+            <a href="mailto:hello@sensay.uk?subject=SENSay%20demo" className="btn btn--primary">Book a demo</a>
+            <a href="https://app.sensay.uk" className="btn btn--outline">Try the live demo</a>
           </div>
           <p className="hero-try">Try it: tap words on the board, then press <strong>Send</strong>.</p>
         </div>
@@ -119,15 +118,17 @@ export default function Hero() {
             </div>
 
             <div className="board-grid">
-              {CORE_WORDS.slice(0, 24).map((c, i) => (
-                <div key={c.word} className={i >= 16 ? 'hide-narrow' : undefined}>
-                  <BoardTile word={c.word} type={c.type} symbol={c.symbol} onTap={() => tap(c.word.toLowerCase() === 'i' ? 'I' : c.word)} pressed={pressed === c.word} />
-                </div>
-              ))}
-              {FOLDERS.map((f, i) => (
-                <div key={f.word} className={i >= 4 ? 'hide-narrow' : undefined}>
-                  <BoardTile word={f.word} type="things" symbol={f.symbol} folder />
-                </div>
+              {CORE_GRID.map(c => (
+                <BoardTile
+                  key={c.word}
+                  word={c.word}
+                  type={c.type}
+                  symbol={c.symbol}
+                  picture={c.picture}
+                  folder={c.folder}
+                  onTap={c.folder ? undefined : () => tap(c.word)}
+                  pressed={pressed === c.word}
+                />
               ))}
             </div>
 

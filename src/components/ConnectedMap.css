@@ -9,6 +9,8 @@
 
 .cmap-diagram {
   position: relative;
+  align-self: start;
+  width: 100%;
   aspect-ratio: 600 / 440;
   background:
     radial-gradient(circle at 50% 51%, var(--blue-tint) 0 18%, transparent 19%),
