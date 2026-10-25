@@ -5,6 +5,7 @@ import { Browser, Closing, PathCard, Promises, Shot, Split } from '../components
 import Hero from '../components/Hero.jsx'
 import ConnectedMap from '../components/ConnectedMap.jsx'
 import BoardMap from '../components/BoardMap.jsx'
+import BuildYourBoard from '../components/BuildYourBoard.jsx'
 import { NewsCard } from './News.jsx'
 import news from '../data/news.json'
 import { GUIDES } from '../data/guides.js'
@@ -45,6 +46,8 @@ export default function Home() {
       <ConnectedMap />
 
       <BoardMap />
+
+      <BuildYourBoard />
 
       {/* Messages */}
       <section className="s-section s-section--white">
