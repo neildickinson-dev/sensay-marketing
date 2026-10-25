@@ -1,6 +1,6 @@
 # SENSay Marketing Website
 
-The sensay.uk marketing site. Built with React + Vite. Zero dependencies beyond React itself.
+The sensay.uk marketing site. Built with React + Vite. No dependencies beyond React and React Router.
 
 ## Local development
 
@@ -11,37 +11,33 @@ npm run dev
 
 Opens at http://localhost:5173
 
-## Deploy to Vercel + sensay.uk
+## Hosting and deploys
 
-### Step 1 — Push to GitHub
-```bash
-git init
-git add .
-git commit -m "Initial SENSay site"
-git branch -M main
-git remote add origin https://github.com/YOURUSERNAME/sensay-site.git
-git push -u origin main
-```
+The site is hosted on Vercel, alongside the app and the back office, in the same Vercel team:
 
-### Step 2 — Deploy on Vercel
-1. Go to vercel.com → New Project → Import from GitHub
-2. Select `sensay-site`
-3. Framework preset: **Vite** (auto-detected)
-4. Build command: `npm run build`  
-5. Output directory: `dist`
-6. Click Deploy
+| Address | Vercel project | Repo |
+|---|---|---|
+| sensay.uk (www.sensay.uk redirects here) | `sensay-marketing` | `sensay-marketing` |
+| app.sensay.uk | `sensay-app` | `sensay-app` |
+| sensay-hq.vercel.app (custom domain to follow) | `sensay-hq` | `sensay-admin` |
 
-### Step 3 — Connect sensay.uk (in Vercel)
-1. Project → Settings → Domains
-2. Add `sensay.uk` and `www.sensay.uk`
-3. Vercel shows you DNS records to add
+- **Production:** every merge to `main` deploys to sensay.uk automatically.
+- **Previews:** every pull request gets its own preview link from Vercel. Check it there before merging.
+- Vercel settings: framework Vite, build command `npm run build`, output directory `dist`.
 
-### Step 4 — Add DNS records (in 123-reg)
-1. Log into 123-reg → My Domains → sensay.uk → Manage → Advanced DNS
-2. Delete any existing A record pointing to `@`
-3. Add: Type=`A`, Name=`@`, Value=`76.76.21.21`
-4. Add: Type=`CNAME`, Name=`www`, Value=`cname.vercel-dns.com`
-5. Save — live within 15–60 minutes
+The old Jenkins deploy to a separate server was retired on 25 October 2026. Do not deploy any other way.
+
+## DNS (123-reg)
+
+sensay.uk is registered at 123-reg. Current web records:
+
+- `A` `@` → `216.150.1.1` (Vercel)
+- `CNAME` `www` → `sensay.uk.` (Vercel redirects it to sensay.uk)
+- `CNAME` `app` → Vercel (the app)
+
+Leave the email records (`send`, `resend._domainkey` and any MX or TXT records) alone when changing web records.
+
+sensay.co.uk is also owned and will redirect to sensay.uk; not set up yet.
 
 ## Email
 
@@ -51,27 +47,27 @@ Every contact link on the site uses `hello@sensay.uk`. There is no form backend:
 
 The marketing site does not link into `app.sensay.uk` before launch. Family plan and founding school calls to action are mailto links to `hello@sensay.uk`.
 
+## Brand
+
+- Logo: `public/sensay-logo.svg` (the traced master logo). Never retype the wordmark in text.
+- Font: Nunito throughout.
+- Colours: blue `#00AEEF`, red `#ED1C24`, green `#00A651`, yellow `#FDB913`, navy `#0A1F3D`.
+
 ## Structure
 
 ```
-sensay-site/
+sensay-marketing/
 ├── index.html          # Entry point + SEO meta tags
 ├── vite.config.js
 ├── vercel.json         # Routing + security headers
 ├── public/
-│   └── favicon.svg
+│   ├── favicon.svg
+│   └── sensay-logo.svg
 └── src/
     ├── main.jsx
     ├── App.jsx
     ├── App.css         # Shared styles, btn, stripe, section utilities
     ├── index.css       # Reset + CSS variables
-    └── components/
-        ├── Nav.jsx/.css        # Sticky nav, mobile hamburger
-        ├── Hero.jsx/.css       # Interactive symbol board demo
-        ├── Stats.jsx/.css      # Dark stats strip
-        ├── HowItWorks.jsx/.css # 4-tab perspective section
-        ├── AISection.jsx/.css  # Dark AI intelligence section
-        ├── Pricing.jsx/.css    # 3-tier pricing cards
-        ├── Testimonials.jsx/.css
-        └── Footer.jsx/.css
+    ├── components/     # Nav, Hero, Stats, HowItWorks, Pricing, Footer and others
+    └── pages/          # About, Our story, For schools, Resources, Press, Contact, legal pages
 ```
