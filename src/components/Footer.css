@@ -12,16 +12,8 @@
   gap: 3rem;
 }
 
-.footer-logo {
-  font-family: var(--font-display);
-  font-size: 28px;
-  font-weight: 900;
-  letter-spacing: -1px;
-  margin-bottom: 0.75rem;
-  line-height: 1;
-}
-.footer-logo__sen { color: var(--blue); }
-.footer-logo__say { color: var(--yellow); }
+.footer-logo { display: inline-block; margin-bottom: 0.75rem; line-height: 0; }
+.footer-logo img { height: 40px; width: auto; display: block; }
 
 .footer-strapline {
   font-size: 14px;

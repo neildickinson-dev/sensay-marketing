@@ -1,15 +1,17 @@
 import React, { useState } from 'react'
 import './Hero.css'
 
+// Same symbols, labels and emoji as the app's own "I feel...", "I need..."
+// and "I want..." categories, so the preview matches what a child sees.
 const SYMBOLS = [
-  { emoji: '😊', label: 'Happy',   theme: 'blue'   },
-  { emoji: '😢', label: 'Sad',     theme: 'red'    },
-  { emoji: '😟', label: 'Anxious', theme: 'yellow' },
-  { emoji: '😴', label: 'Tired',   theme: 'green'  },
-  { emoji: '🍔', label: 'Hungry',  theme: 'green'  },
-  { emoji: '🎮', label: 'Play',    theme: 'blue'   },
-  { emoji: '🤝', label: 'Help me', theme: 'yellow' },
-  { emoji: '🔥', label: 'Pain',    theme: 'red'    },
+  { emoji: '😄', label: 'Happy',    theme: 'blue'   },
+  { emoji: '😢', label: 'Sad',      theme: 'red'    },
+  { emoji: '😟', label: 'Worried',  theme: 'yellow' },
+  { emoji: '😴', label: 'Tired',    theme: 'green'  },
+  { emoji: '😨', label: 'Scared',   theme: 'yellow' },
+  { emoji: '😠', label: 'Angry',    theme: 'red'    },
+  { emoji: '🆘', label: 'Help',     theme: 'blue'   },
+  { emoji: '🎮', label: 'To play',  theme: 'green'  },
 ]
 
 export default function Hero() {
@@ -75,8 +77,8 @@ export default function Hero() {
             <div className={`demo-insight${tapped ? ' demo-insight--visible' : ''}`} aria-live="polite">
               <span className="demo-insight__dot" />
               <span>
-                <strong style={{color:'var(--green)'}}>AI insight: </strong>
-                William has selected &ldquo;{tapped}&rdquo;. Pattern analysis updating.
+                <strong style={{color:'var(--green)'}}>Recorded: </strong>
+                William chose &ldquo;{tapped}&rdquo;. Added to his pattern record, with time and place.
               </span>
             </div>
           </div>
