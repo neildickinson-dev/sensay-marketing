@@ -1,0 +1,138 @@
+.section-inner--wide { max-width: 1180px; }
+
+.cmap {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.cmap-diagram {
+  position: relative;
+  align-self: start;
+  width: 100%;
+  aspect-ratio: 600 / 440;
+  background:
+    radial-gradient(circle at 50% 51%, var(--blue-tint) 0 18%, transparent 19%),
+    var(--page);
+  border-radius: 24px;
+  border: 1px solid var(--line);
+}
+.cmap-lines { position: absolute; inset: 0; width: 100%; height: 100%; }
+.cmap-line { fill: none; stroke: var(--control-border); stroke-width: 3; stroke-dasharray: 7 7; vector-effect: non-scaling-stroke; transition: stroke 0.2s; }
+.cmap-line.is-on { stroke: var(--navy); stroke-dasharray: none; }
+.cmap-dot--blue { fill: var(--blue); }
+.cmap-dot--yellow { fill: var(--yellow); }
+.cmap-dot--green { fill: var(--green); }
+.cmap-dot--navy { fill: var(--navy); }
+
+.cmap-node {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  min-width: 132px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 12px 10px 10px;
+  background: var(--card);
+  border: 3px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 8px 22px rgba(10, 31, 61, 0.08);
+  font-family: var(--font-display);
+  color: var(--navy);
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.cmap-node:hover { transform: translate(-50%, -52%); }
+.cmap-node img { width: 52px; height: 52px; object-fit: contain; }
+.cmap-node__name { font-weight: 900; font-size: 1.05rem; }
+.cmap-node__who { font-size: 12px; color: var(--muted); line-height: 1.3; text-align: center; }
+.cmap-node--home   { left: 20%; top: 21.5%; }
+.cmap-node--school { left: 80%; top: 21.5%; }
+.cmap-node--clinic { left: 50%; top: 82%; }
+.cmap-node--yellow.is-active { border-color: var(--yellow); background: var(--yellow-tint); }
+.cmap-node--blue.is-active   { border-color: var(--blue); background: var(--blue-tint); }
+.cmap-node--green.is-active  { border-color: var(--green); background: var(--green-tint); }
+
+.cmap-record {
+  position: absolute;
+  left: 50%;
+  top: 51%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: var(--card);
+  border: 3px solid var(--navy);
+  border-radius: 16px;
+  padding: 10px 14px;
+  box-shadow: 0 10px 26px rgba(10, 31, 61, 0.14);
+}
+.cmap-record img { width: 96px; height: auto; }
+.cmap-record__name { font-family: var(--font-display); font-weight: 900; font-size: 12px; color: var(--navy); white-space: nowrap; }
+
+.cmap-panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-top: 6px solid var(--blue);
+  border-radius: 20px;
+  padding: 1.5rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.cmap-panel--yellow { border-top-color: var(--yellow); }
+.cmap-panel--green { border-top-color: var(--green); }
+.cmap-panel__head { display: flex; align-items: center; gap: 12px; }
+.cmap-panel__head img { width: 44px; height: 44px; object-fit: contain; }
+.cmap-panel h3 { font-family: var(--font-display); font-weight: 900; font-size: 1.35rem; color: var(--navy); line-height: 1.1; }
+.cmap-panel__head p { font-size: 14px; color: var(--muted); }
+.cmap-panel__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; }
+.cmap-panel h4 {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--blue-text);
+  margin-bottom: 6px;
+}
+.cmap-panel ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.cmap-panel li { position: relative; padding-left: 16px; font-size: 14px; line-height: 1.5; color: var(--body); }
+.cmap-panel li::before { content: ''; position: absolute; left: 0; top: 0.55em; width: 7px; height: 7px; border-radius: 2px; background: var(--navy); }
+.cmap-panel__record { background: var(--page); border-radius: 12px; padding: 12px 14px; }
+.cmap-tabs { display: flex; gap: 8px; margin-top: auto; }
+.cmap-tabs button {
+  flex: 1;
+  padding: 8px;
+  border-radius: 50px;
+  border: 2px solid var(--line);
+  background: var(--card);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--navy);
+}
+.cmap-tabs button.is-active { border-color: var(--navy); background: var(--navy); color: #fff; }
+
+.cmap-foot { margin: 1.75rem auto 0; max-width: 760px; text-align: center; font-size: 15px; color: var(--body); line-height: 1.7; }
+.cmap-foot strong { color: var(--navy); }
+
+@media (prefers-reduced-motion: reduce) { .cmap-flow { display: none; } }
+
+@media (max-width: 900px) {
+  .cmap { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .cmap-diagram { aspect-ratio: 600 / 560; }
+  .cmap-node { width: 42%; min-width: 0; padding: 8px 6px; }
+  .cmap-node img { width: 36px; height: 36px; }
+  .cmap-node__who { display: none; }
+  .cmap-node--home { left: 24%; top: 17%; }
+  .cmap-node--school { left: 76%; top: 17%; }
+  .cmap-node--clinic { top: 85%; }
+  .cmap-record img { width: 76px; }
+  .cmap-panel__cols { grid-template-columns: 1fr; }
+}

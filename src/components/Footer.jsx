@@ -3,27 +3,31 @@ import { Link } from 'react-router-dom'
 import './Footer.css'
 
 const LINKS = {
-  Product: [
-    { label: 'How it works',   href: '/#how-it-works', internal: true },
-    { label: 'For schools',    href: '/senco',         internal: true },
-    { label: 'AI reports',     href: '/#proof',        internal: true },
-    { label: 'Pricing',        href: '/#pricing',      internal: true },
+  'Who it is for': [
+    { label: 'Families',          href: '/families',   internal: true },
+    { label: 'Schools and SENCOs', href: '/schools',   internal: true },
+    { label: 'Therapists',        href: '/therapists', internal: true },
+    { label: 'AAC services',      href: '/connect',    internal: true },
   ],
   Company: [
-    { label: 'About SENSay',   href: '/about',      internal: true },
-    { label: 'Our story',      href: '/our-story',  internal: true },
-    { label: 'Documentation',  href: '/documentation', internal: true },
+    { label: 'Our story',       href: '/our-story', internal: true },
+    { label: 'About SENSay',    href: '/about',     internal: true },
+    { label: 'Guides',          href: '/guides',    internal: true },
+    { label: 'SEN news',        href: '/news',      internal: true },
     { label: 'Press and media', href: '/press',     internal: true },
   ],
   Support: [
-    { label: 'Contact us',     href: '/contact',    internal: true },
-    { label: 'Privacy policy', href: '/privacy',    internal: true },
-    { label: 'Terms of service',href: '/terms',     internal: true },
+    { label: 'Contact us',       href: '/contact', internal: true },
+    { label: 'Privacy policy',   href: '/privacy', internal: true },
+    { label: 'Terms of service', href: '/terms',   internal: true },
+    { label: 'Sign in',          href: 'https://app.sensay.uk', internal: false },
   ],
   Contact: [
-    { label: 'hello@sensay.uk', href: 'mailto:hello@sensay.uk', internal: false },
+    { label: 'hello@sensay.uk',   href: 'mailto:hello@sensay.uk',   internal: false },
+    { label: 'support@sensay.uk', href: 'mailto:support@sensay.uk', internal: false },
   ],
 }
+
 
 export default function Footer() {
   return (
@@ -40,7 +44,7 @@ export default function Footer() {
             Built for everyone who supports a non-verbal child.
           </p>
           <p className="footer-sub">
-            Symbols: Mulberry Symbols (Steve Lee) and PiCom, via Global Symbols, CC BY-SA 4.0.
+            Symbols: Mulberry Symbols (Steve Lee), via Global Symbols, CC BY-SA 4.0. Product photos: Open Food Facts, CC BY-SA.
           </p>
         </div>
 

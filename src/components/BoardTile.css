@@ -1,0 +1,55 @@
+.btile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border: 3px solid;
+  border-radius: 12px;
+  padding: 6px 2px;
+  min-width: 0;
+  aspect-ratio: 1 / 1;
+  font-family: var(--font-display);
+  color: var(--navy);
+  transition: transform 0.12s, background 0.12s;
+}
+button.btile:hover { transform: translateY(-1px); }
+button.btile:active { transform: scale(0.96); }
+.btile__pic { display: flex; align-items: center; justify-content: center; height: 34px; }
+.btile__pic img { width: 34px; height: 34px; object-fit: contain; }
+.btile__label {
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 1.1;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.btile__label--big { font-size: 17px; }
+.btile__label--long { font-size: 10.5px; white-space: normal; overflow-wrap: normal; }
+.btile__label--big.btile__label--long { font-size: 13px; }
+.btile__folder { position: absolute; top: 4px; right: 5px; line-height: 0; opacity: 0.8; }
+.btile--empty { border: 2px dashed var(--line); background: transparent; }
+
+.btile--sm { border-width: 2px; border-radius: 7px; padding: 2px 1px; gap: 1px; }
+.btile--sm .btile__pic { height: 18px; }
+.btile--sm .btile__pic img { width: 18px; height: 18px; }
+.btile--sm .btile__label { font-size: 8px; }
+.btile--sm .btile__label--big { font-size: 11px; }
+.btile--sm .btile__label--long { font-size: 7.5px; }
+.btile--sm .btile__folder { display: none; }
+
+@media (max-width: 640px) {
+  .btile { border-width: 2px; border-radius: 8px; padding: 3px 1px; gap: 2px; }
+  .btile__pic { height: 22px; }
+  .btile__pic img { width: 22px; height: 22px; }
+  .btile__pic svg { width: 20px; height: 20px; }
+  .btile__label { font-size: 9px; }
+  .btile__label--big { font-size: 12px; }
+  .btile__label--long { font-size: 7px; white-space: nowrap; overflow-wrap: normal; letter-spacing: -0.2px; }
+  .btile__label--big.btile__label--long { font-size: 8.5px; }
+  .btile__folder { display: none; }
+}

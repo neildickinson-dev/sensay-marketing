@@ -1,15 +1,41 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
+  /* Brand tokens from the approved design (sensay-app src/constants/brand-tokens.ts, 21 Oct 2026).
+     Rules: navy carries the words. Blue fills take navy text, never white.
+     Yellow is a fill only, never text. */
+  --navy:   #0A1F3D;
+  --navy-raised: #1B3354;
+  --body:   #3D4A5C;
+  --muted:  #5B6676;
+  --line:   #E3E7EE;
+  --line-soft: #EEF1F5;
+  --control-border: #C9D1DC;
+  --page:   #F6F7F9;
+  --card:   #FFFFFF;
+  --on-navy-accent: #8FD9F6;
+
   --blue:   #00AEEF;
-  --red:    #ED1C24;
+  --blue-text: #0072A3;
+  --blue-tint: #E5F6FD;
+  --blue-ink: #005A82;
   --green:  #00A651;
+  --green-ink: #007A3C;
+  --green-tint: #E6F6EC;
   --yellow: #FDB913;
-  --dark:   #0A1F3D;
-  --mid:    #2d3748;
-  --muted:  #64748b;
-  --light:  #f8fafc;
-  --card:   #ffffff;
+  --yellow-ink: #6E4A00;
+  --yellow-tint: #FFF6DD;
+  --red:    #ED1C24;
+  --red-ink: #A3121A;
+  --red-tint: #FDE8E8;
+  --orange: #F28C28;
+  --pink:   #D9559A;
+
+  /* Older names, kept so existing styles follow the new tokens. */
+  --dark:   var(--navy);
+  --mid:    var(--body);
+  --light:  var(--page);
+
   --radius: 16px;
   --font-display: 'Nunito', sans-serif;
   --font-body:    'Nunito', sans-serif;

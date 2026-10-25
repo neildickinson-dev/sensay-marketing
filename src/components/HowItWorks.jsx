@@ -38,11 +38,12 @@ const TABS = [
   },
 ]
 
+// Brand tokens: fills with their tint; text on them is always navy.
 const COLOR_MAP = {
-  blue:   { dot: '#00AEEF', bg: '#eaf7ff' },
-  green:  { dot: '#00A651', bg: '#edfff4' },
-  red:    { dot: '#ED1C24', bg: '#fff3f3' },
-  yellow: { dot: '#c8850a', bg: '#fffbee' },
+  blue:   { dot: '#00AEEF', bg: '#E5F6FD' },
+  green:  { dot: '#00A651', bg: '#E6F6EC' },
+  red:    { dot: '#ED1C24', bg: '#FDE8E8' },
+  yellow: { dot: '#FDB913', bg: '#FFF6DD' },
 }
 
 export default function HowItWorks() {
@@ -64,7 +65,7 @@ export default function HowItWorks() {
             <button
               key={t.id}
               className={`hiw-tab${active === t.id ? ' hiw-tab--active' : ''}`}
-              style={active === t.id ? { background: COLOR_MAP[t.color].bg, color: COLOR_MAP[t.color].dot, borderColor: COLOR_MAP[t.color].dot } : {}}
+              style={active === t.id ? { background: COLOR_MAP[t.color].bg, color: 'var(--navy)', borderColor: COLOR_MAP[t.color].dot } : {}}
               onClick={() => setActive(t.id)}
             >
               <span aria-hidden="true">{t.icon}</span> {t.label}
@@ -88,7 +89,7 @@ export default function HowItWorks() {
               {tab.link && (
                 <>
                   {' '}
-                  <Link to={tab.link.to} className="hiw-inline-link" style={{ color: c.dot }}>
+                  <Link to={tab.link.to} className="hiw-inline-link" style={{ color: 'var(--blue-text)' }}>
                     {tab.link.label}
                   </Link>
                 </>

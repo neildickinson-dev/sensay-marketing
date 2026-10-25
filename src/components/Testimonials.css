@@ -96,7 +96,7 @@
 }
 .testimonials-cta__btns .btn--outline:hover {
   border-color: var(--yellow);
-  color: var(--yellow);
+  color: #fff;
 }
 
 @media (max-width: 860px) {
