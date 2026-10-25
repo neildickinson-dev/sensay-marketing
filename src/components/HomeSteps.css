@@ -23,7 +23,7 @@
   font-family: var(--font-display);
   font-weight: 900;
   font-size: 1.1rem;
-  color: #fff;
+  color: var(--navy);
   margin-bottom: 1rem;
 }
 .home-step--blue   .home-step__num { background: var(--blue); }

@@ -103,9 +103,9 @@
   border: 2px solid #e2e8f0;
   background: #fff;
 }
-.pricing-cta:hover { border-color: var(--blue); color: var(--blue); transform: translateY(-1px); }
-.btn--primary.pricing-cta { color: #fff; border: none; }
-.btn--primary.pricing-cta:hover { opacity: 0.9; color: #fff; }
+.pricing-cta:hover { border-color: var(--blue); color: var(--blue-text); transform: translateY(-1px); }
+.btn--primary.pricing-cta { color: var(--navy); border: none; }
+.btn--primary.pricing-cta:hover { opacity: 0.9; color: var(--navy); }
 
 .pricing-note {
   text-align: center;
@@ -114,7 +114,7 @@
   line-height: 1.8;
 }
 .pricing-note a {
-  color: var(--blue);
+  color: var(--blue-text);
   font-weight: 700;
 }
 .pricing-note a:hover { text-decoration: underline; }

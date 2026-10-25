@@ -47,7 +47,7 @@
   font-weight: 700;
   transition: border-color 0.2s, color 0.2s;
 }
-.footer-social:hover { border-color: var(--blue); color: var(--blue); }
+.footer-social:hover { border-color: var(--blue); color: var(--blue-text); }
 
 .footer-col__heading {
   font-size: 11px;

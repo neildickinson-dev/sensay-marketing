@@ -15,10 +15,10 @@ main { flex: 1; }
   font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--blue);
+  color: var(--blue-text);
   margin-bottom: 0.75rem;
 }
-.section-tag--yellow { color: var(--yellow); }
+.section-tag--yellow { color: var(--on-navy-accent); }
 
 .section-header { text-align: center; margin-bottom: 3.5rem; }
 
@@ -58,7 +58,7 @@ main { flex: 1; }
 .btn:hover { transform: translateY(-2px); }
 .btn--primary {
   background: var(--blue);
-  color: #fff;
+  color: var(--navy);
   box-shadow: 0 4px 20px rgba(0,174,239,0.35);
 }
 .btn--primary:hover { box-shadow: 0 8px 28px rgba(0,174,239,0.45); }

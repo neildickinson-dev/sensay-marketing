@@ -14,7 +14,7 @@
 }
 .senco-hero-cta .btn--outline:hover {
   border-color: var(--yellow);
-  color: var(--yellow);
+  color: #fff;
 }
 
 /* Three-column feature grid */
@@ -107,7 +107,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  color: var(--green);
+  color: var(--green-ink);
   font-weight: 900;
 }
 .pilot-cta {
@@ -150,7 +150,7 @@
   font-family: var(--font-display);
   font-weight: 900;
   font-size: 1.25rem;
-  color: var(--blue);
+  color: var(--blue-text);
   flex-shrink: 0;
 }
 .faq-item__a {
@@ -204,7 +204,7 @@
 }
 .founder-note__contact { color: var(--muted); }
 .founder-note__contact a {
-  color: var(--blue);
+  color: var(--blue-text);
   font-weight: 700;
 }
 .senco-bottom-cta {
