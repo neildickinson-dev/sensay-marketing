@@ -5,14 +5,14 @@
   --red:    #ED1C24;
   --green:  #00A651;
   --yellow: #FDB913;
-  --dark:   #12192b;
+  --dark:   #0A1F3D;
   --mid:    #2d3748;
   --muted:  #64748b;
   --light:  #f8fafc;
   --card:   #ffffff;
   --radius: 16px;
   --font-display: 'Nunito', sans-serif;
-  --font-body:    'Nunito Sans', sans-serif;
+  --font-body:    'Nunito', sans-serif;
 }
 
 html { scroll-behavior: smooth; }
@@ -39,7 +39,7 @@ button { cursor: pointer; font-family: inherit; }
 
 /* Keyboard focus: visible on every interactive element. */
 :focus-visible {
-  outline: 3px solid #12192b;
+  outline: 3px solid #0A1F3D;
   outline-offset: 2px;
 }
 

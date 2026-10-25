@@ -21,7 +21,7 @@ export default function Nav() {
     <header className={`nav${scrolled ? ' nav--scrolled' : ''}`}>
       <div className="nav-inner">
         <Link to="/" className="nav-logo" aria-label="SENSay home">
-          <span className="nav-logo__sen">SEN</span><span className="nav-logo__say">Say</span>
+          <img src="/sensay-logo.svg" alt="SENSay" width="140" height="40" />
         </Link>
 
         <nav className={`nav-links${menuOpen ? ' nav-links--open' : ''}`} aria-label="Main navigation">

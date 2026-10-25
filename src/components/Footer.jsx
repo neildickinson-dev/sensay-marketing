@@ -31,9 +31,8 @@ export default function Footer() {
       <div className="stripe" />
       <div className="footer-inner">
         <div className="footer-brand">
-          <Link to="/" className="footer-logo">
-            <span className="footer-logo__sen">SEN</span>
-            <span className="footer-logo__say">Say</span>
+          <Link to="/" className="footer-logo" aria-label="SENSay home">
+            <img src="/sensay-logo.svg" alt="SENSay" width="154" height="44" />
           </Link>
           <p className="footer-strapline">Helping every child be heard and understood.</p>
           <p className="footer-sub">
