@@ -24,7 +24,7 @@ export default function Connect() {
               tells your team who needs you this week. No new device, and nothing for the child to learn.
             </p>
             <div className="s-actions">
-              <a className="s-btn s-btn--primary" href="mailto:hello@sensay.uk?subject=SENSay%20Connect%20trial">Start a free 90-day trial</a>
+              <a className="s-btn s-btn--primary" href="/contact?topic=connect">Start a free 90-day trial</a>
               <a className="s-btn s-btn--ghost" href={guideHref('connect')}>Read the Connect guide</a>
             </div>
           </div>

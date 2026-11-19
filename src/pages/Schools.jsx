@@ -25,7 +25,7 @@ export default function Schools() {
               behind what those pupils are telling them, from class and from home, ready for every review.
             </p>
             <div className="s-actions">
-              <a className="s-btn s-btn--primary" href="mailto:hello@sensay.uk?subject=SENSay%20school%20demo">Book a school demo</a>
+              <a className="s-btn s-btn--primary" href="/contact?topic=demo">Book a school demo</a>
               <a className="s-btn s-btn--ghost" href={guideHref('schools')}>Read the schools guide</a>
             </div>
           </div>

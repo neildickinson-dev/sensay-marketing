@@ -105,7 +105,7 @@ export function Closing({ title = 'See SENSay for yourself', lead = 'Try the liv
         <p className="s-lead">{lead}</p>
         <div className="s-actions" style={{ justifyContent: 'center' }}>
           <a className="s-btn s-btn--primary" href="https://app.sensay.uk">Try the live demo</a>
-          <a className="s-btn s-btn--ghost" href="mailto:hello@sensay.uk?subject=SENSay%20demo">Book a demo</a>
+          <a className="s-btn s-btn--ghost" href="/contact?topic=demo">Book a demo</a>
         </div>
       </div>
     </section>
