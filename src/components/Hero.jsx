@@ -76,7 +76,7 @@ export default function Hero() {
             school and therapy, built by the parents of a non-verbal child.
           </p>
           <div className="hero-btns">
-            <a href="mailto:hello@sensay.uk?subject=SENSay%20demo" className="btn btn--primary">Book a demo</a>
+            <a href="/contact?topic=demo" className="btn btn--primary">Book a demo</a>
             <a href="https://app.sensay.uk" className="btn btn--outline">Try the live demo</a>
           </div>
           <p className="hero-try">Try it: tap words on the board, then press <strong>Send</strong>.</p>

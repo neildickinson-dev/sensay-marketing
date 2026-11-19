@@ -25,6 +25,11 @@ const LINKS = {
   Contact: [
     { label: 'hello@sensay.uk',   href: 'mailto:hello@sensay.uk',   internal: false },
     { label: 'support@sensay.uk', href: 'mailto:support@sensay.uk', internal: false },
+    { label: 'Book a demo',       href: '/contact?topic=demo',     internal: true },
+  ],
+  'Follow us': [
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/company/sensayuk/', internal: false, external: true },
+    { label: 'Facebook', href: 'https://www.facebook.com/sensayuk',          internal: false, external: true },
   ],
 }
 
@@ -56,7 +61,7 @@ export default function Footer() {
                 <li key={item.label}>
                   {item.internal
                     ? <Link to={item.href}>{item.label}</Link>
-                    : <a href={item.href}>{item.label}</a>
+                    : <a href={item.href} {...(item.external ? { target: '_blank', rel: 'noopener' } : {})}>{item.label}</a>
                   }
                 </li>
               ))}

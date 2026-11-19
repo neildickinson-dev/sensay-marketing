@@ -184,8 +184,9 @@ export default function Privacy() {
           </SECTION>
 
           <SECTION id="cookies" title="10. Cookies and tracking">
-            <p>The SENSay website (sensay.uk) sets no cookies and uses no analytics. It loads fonts from Google Fonts, which means your browser sends your IP address to Google when the page loads.</p>
-            <p>We do <strong>not</strong> use advertising cookies, third-party tracking pixels, or social media tracking. We do not use Google Analytics or similar analytics services.</p>
+            <p>The SENSay website (sensay.uk) sets no cookies. It uses Vercel Web Analytics to count page visits. This does not use cookies or identify you: visits are counted from anonymised data and no personal profile is built. The website also loads fonts from Google Fonts, which means your browser sends your IP address to Google when the page loads.</p>
+            <p>If you use the contact form, your name, email address, organisation and message are sent to us by email through Resend so that we can reply. We keep enquiries only as long as we need them to deal with your request.</p>
+            <p>We do <strong>not</strong> use advertising cookies, third-party tracking pixels, or social media tracking. We do not use Google Analytics or any analytics that tracks you across websites.</p>
             <p>The SENSay app uses local device storage for signing in and for offline use. This data stays on your device and is only sent to us when you are connected and using the app.</p>
           </SECTION>
 

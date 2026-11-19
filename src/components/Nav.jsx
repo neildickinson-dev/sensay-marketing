@@ -39,7 +39,7 @@ export default function Nav() {
               : <NavLink key={to} to={to} className={({ isActive }) => (isActive ? 'is-active' : undefined)}>{label}</NavLink>
           ))}
           <a href="https://app.sensay.uk" className="nav-signin">Sign in</a>
-          <a href="mailto:hello@sensay.uk?subject=SENSay%20demo" className="nav-cta">Book a demo</a>
+          <a href="/contact?topic=demo" className="nav-cta">Book a demo</a>
         </nav>
 
         <button className="nav-burger" aria-label="Toggle menu" aria-expanded={menuOpen} onClick={() => setMenuOpen((o) => !o)}>
